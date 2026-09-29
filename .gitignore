@@ -1,0 +1,27 @@
+# Bí mật: KHÔNG BAO GIỜ commit
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Log vận hành (có thể chứa dữ liệu người dùng)
+logs/
+evals/results/_mock/
+
+# Đề bài thật của người dùng: chỉ commit nếu chắc chắn được phép chia sẻ
+demo/sample-inputs/private/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+dist/
+
+# Log thô của bộ kiểm thử trên đề thật: chứa nguyên văn tài liệu của giảng viên
+evals/results/raw/*__real/
+# ...và ở BẤT KỲ đâu (kể cả thư mục tham khảo _exploratory/): mọi log thô của ca đề thật RCxx
+evals/results/**/RC[0-9][0-9]__r*.json
+evals/results/**/*__real/
+
+# Ghi chú làm việc nội bộ
+CHECKPOINT.md

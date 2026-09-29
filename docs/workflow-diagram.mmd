@@ -1,0 +1,24 @@
+flowchart TD
+    A([Sinh viên tải đề bài + yêu cầu]) --> B[SANITIZE · code<br/>trích text, chặn rỗng/rác,<br/>che PII & API key, đánh dấu injection]
+    B --> C{PRE-CHECK<br/>đầu vào hợp lệ?<br/>yêu cầu trong phạm vi?}
+    C -- "Rác / không phải đề" --> X1([INVALID_INPUT<br/>báo lỗi, không phân tích])
+    C -- "Viết hộ bài / đoán điểm" --> X2([REFUSED<br/>nêu lý do, chuyển giảng viên])
+    C -- "Hợp lệ" --> D[ANALYZE · AI<br/>trích yêu cầu, ràng buộc, sản phẩm,<br/>tiêu chí, hạn nộp KÈM TRÍCH DẪN;<br/>tìm thiếu sót / mâu thuẫn / phi lý]
+    D --> E[VALIDATE · code<br/>schema JSON · trích dẫn có thật trong đề<br/>· ngày hợp lệ · mốc ≤ hạn nộp]
+    E --> F{Thiếu hạn nộp / dữ liệu phi lý /<br/>mâu thuẫn / thiếu căn cứ?}
+    F -- "Có" --> G([NEED_INFO<br/>hỏi lại người dùng,<br/>KHÔNG lập kế hoạch])
+    G -. "người dùng bổ sung" .-> A
+    F -- "Không" --> H[Đề xuất kế hoạch có mốc]
+    H --> I{{HUMAN CHECKPOINT<br/>sinh viên đối chiếu với đề gốc<br/>và tick xác nhận}}
+    I -- "Xác nhận" --> J([ACTION: xuất Markdown / JSON<br/>read-only · không gửi · không nộp])
+    I -- "Chưa đúng" --> A
+    D -.-> L[(AUDIT LOG<br/>thời điểm · model · trạng thái · token<br/>không lưu nội dung đề)]
+
+    classDef ai fill:#dbeafe,stroke:#1d4ed8,color:#0b1b3a
+    classDef code fill:#dcfce7,stroke:#15803d,color:#052e16
+    classDef human fill:#fef3c7,stroke:#b45309,color:#3b2002
+    classDef stop fill:#fee2e2,stroke:#b91c1c,color:#450a0a
+    class D,H ai
+    class B,E,L code
+    class I human
+    class X1,X2,G stop

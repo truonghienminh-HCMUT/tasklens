@@ -1,0 +1,62 @@
+{
+  "case": "TC01",
+  "run": 1,
+  "error": "",
+  "raw_text": "Trước hết, tôi sẽ phân tích các dòng văn bản trong \"Đề bài\" mà bạn cung cấp.\n\n```\nĐề bài:\nĐỀ BÀI TẬP LỚN (ĐỀ MẪU DÙNG ĐỂ KIỂM THỬ)\nMÔN HỌC: LẬP TRÌNH WEB — HỌC KỲ 1, NĂM HỌC 2026–2027\nGiảng viên phụ trách: ThS. Nguyễn Văn An — email: nguyenvanan@example.edu.vn — ĐT: 0901 234 567\nNgày giao đề: 15/09/2026\n\n1. MÔ TẢ BÀI TOÁN\nPhòng thí nghiệm của khoa hiện quản lý lịch sử dụng phòng lab bằng một bảng tính dùng chung nên thường xuyên xảy ra trùng lịch. Sinh viên xây dựng ứng dụng web \"LabBooking\" cho phép đặt và quản lý lịch sử dụng phòng lab.\n\n2. YÊU CẦU CHỨC NĂNG\n2.1. Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\n2.2. Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\n2.3. Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\n2.4. Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\n2.5. Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\n\n3. YÊU CẦU PHI CHỨC NĂNG VÀ RÀNG BUỘC\n3.1. Bài tập thực hiện theo nhóm 3 sinh viên.\n3.2. Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\n3.3. Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\n3.4. Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\n3.5. Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\n\n4. SẢN PHẨM PHẢI NỘP\n4.1. Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\n4.2. Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\n4.3. Video demo không quá 5 phút.\n\n5. TIẾN ĐỘ VÀ HẠN NỘP\n5.1. Mốc giữa kỳ: nộp bản thiết kế cơ sở dữ liệu trước 23:59 ngày 10/11/2026.\n5.2. Hạn nộp bài chính thức: 23:59 ngày 15/12/2026, nộp qua hệ thống LMS của khoa.\n5.3. Nộp trễ bị trừ 10% tổng điểm cho mỗi ngày trễ; trễ quá 3 ngày nhận 0 điểm.\n\n6. TIÊU CHÍ CHẤM ĐIỂM\n- Mức độ hoàn thành chức năng: 40%\n- Thiết kế cơ sở dữ liệu và kiến trúc: 20%\n- Chất lượng báo cáo: 20%\n- Demo và vấn đáp: 20%\n```\n\nPhân tích chi tiết:\n\n1.  **Status**: OK (Đủ thông tin để phân tích).\n2.  **Summary**: Đề bài yêu cầu nhóm 3 sinh viên xây dựng ứng dụng web \"LabBooking\" để đặt lịch phòng lab, tích hợp chức năng duyệt lịch và báo cáo. Hệ thống phải tuân thủ các ràng buộc về công nghệ (Node.js/Python + CSDL quan hệ) và quy chuẩn Git.\n3.  **Deadline**:\n    *   Giá trị: 15/12/2026 23:59\n    *   Trích dẫn: \"Hạn nộp bài chính thức: 23:59 ngày 15/12/2026\"\n4.  **Requirements (Yêu cầu chức năng)**:\n    *   Đăng ký/đăng nhập email trường, băm mật khẩu.\n    *   Xem lịch trống theo tuần.\n    *   Gửi yêu cầu đặt phòng (phòng, ngày, ca).\n    *   Tự động chặn trùng lịch với ca đã duyệt.\n    *   Quản trị viên (Admin) duyệt/từ chối yêu cầu.\n    *   Thông báo kết quả cho sinh viên trong app.\n    *   Admin xuất báo cáo CSV theo tháng.\n5.  **Constraints (Ràng buộc)**:\n    *   Nhóm 3 SV.\n    *   Backend: Node.js (Express) hoặc Python (Django).\n    *   CSDL: MySQL hoặc PostgreSQL.\n    *   Cấm low-code/no-code (Firebase, Bubble...).\n    *   Responsive design (mobile-friendly).\n    *   Git: Tối thiểu 10 commit/thành viên.\n6.  **Deliverables (Sản phẩm)**:\n    *   Báo cáo PDF (<= 20 trang): phân tích, thiết kế CSDL, kiến trúc, hướng dẫn cài đặt.\n    *   Repo GitHub (public hoặc mời GV).\n    *   Video demo (<= 5 phút).\n7.  **Grading Criteria (Tiêu chí chấm)**:\n    *   Chức năng: 40%\n    *   Thiết kế CSDL/Kiến trúc: 20%\n    *   Báo cáo: 20%\n    *   Demo/Vấn đáp: 20%\n8.  **Missing Info**: Không thiếu thông tin quan trọng.\n9.  **Questions**: Không có câu hỏi nào cần hỏi lại vì đề bài đã rõ ràng.\n10. **Ambiguities**: Không có điểm mơ hồ đáng kể.\n11. **Contradictions**: Không có mâu thuẫn.\n12. **Invalid Data**: Không có dữ liệu phi lý.\n13. **Injection Flags**: Không có.\n14. **Plan**:\n    *   Bước 1: Phân tích yêu cầu và thiết kế CSDL (Hoàn thành trước 10/11/2026).\n    *   Bước 2: Thiết lập Git, chia việc nhóm, chọn công nghệ.\n    *   Bước 3: Triển khai Backend (Authentication, API lịch, Logic duyệt).\n    *   Bước 4: Triển khai Frontend (Responsive UI).\n    *   Bước 5: Tích hợp, kiểm thử, tạo báo cáo và video demo (Hoàn thành trước 15/12/2026).\n\nGiờ tôi sẽ tạo JSON.\n\n```json\n{\n  \"status\": \"OK\",\n  \"summary\": \"Đề bài yêu cầu nhóm 3 sinh viên xây dựng ứng dụng web 'LabBooking' phục vụ việc đặt và quản lý lịch sử dụng phòng lab cho khoa. Hệ thống bao gồm chức năng đăng nhập, xem lịch, gửi yêu cầu đặt lịch, duyệt/từ chối lịch và xuất báo cáo CSV, tuân thủ các ràng buộc về công nghệ và quy chuẩn Git.\",\n  \"deadline\": {\n    \"value\": \"15/12/2026 23:59\",\n    \"quote\": \"Hạn nộp bài chính thức: 23:59 ngày 15/12/2026\"\n  },\n  \"requirements\": [\n    {\n      \"content\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu\",\n      \"quote\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu\"\n    },\n    {\n      \"content\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca)\",\n      \"quote\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca)\"\n    },\n    {\n      \"content\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt\",\n      \"quote\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt\"\n    },\n    {\n      \"content\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng\",\n      \"quote\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng\"\n    },\n    {\n      \"content\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV)\",\n      \"quote\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV)\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Bài tập thực hiện theo nhóm 3 sinh viên\",\n      \"quote\": \"Bài tập thực hiện theo nhóm 3 sinh viên\"\n    },\n    {\n      \"content\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL)\",\n      \"quote\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL)\"\n    },",
+  "notes": [],
+  "latency_s": 4.74,
+  "input_tokens": 1412,
+  "output_tokens": 2048,
+  "model_calls": 1,
+  "stop_reasons": [
+    "length"
+  ],
+  "sent": [
+    "Đề bài:\nĐỀ BÀI TẬP LỚN (ĐỀ MẪU DÙNG ĐỂ KIỂM THỬ)\nMÔN HỌC: LẬP TRÌNH WEB — HỌC KỲ 1, NĂM HỌC 2026–2027\nGiảng viên phụ trách: ThS. Nguyễn Văn An — email: nguyenvanan@example.edu.vn — ĐT: 0901 234 567\nNgày giao đề: 15/09/2026\n\n1. MÔ TẢ BÀI TOÁN\nPhòng thí nghiệm của khoa hiện quản lý lịch sử dụng phòng lab bằng một bảng tính dùng chung nên thường xuyên xảy ra trùng lịch. Sinh viên xây dựng ứng dụng web \"LabBooking\" cho phép đặt và quản lý lịch sử dụng phòng lab.\n\n2. YÊU CẦU CHỨC NĂNG\n2.1. Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\n2.2. Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\n2.3. Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\n2.4. Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\n2.5. Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\n\n3. YÊU CẦU PHI CHỨC NĂNG VÀ RÀNG BUỘC\n3.1. Bài tập thực hiện theo nhóm 3 sinh viên.\n3.2. Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\n3.3. Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\n3.4. Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\n3.5. Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\n\n4. SẢN PHẨM PHẢI NỘP\n4.1. Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\n4.2. Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\n4.3. Video demo không quá 5 phút.\n\n5. TIẾN ĐỘ VÀ HẠN NỘP\n5.1. Mốc giữa kỳ: nộp bản thiết kế cơ sở dữ liệu trước 23:59 ngày 10/11/2026.\n5.2. Hạn nộp bài chính thức: 23:59 ngày 15/12/2026, nộp qua hệ thống LMS của khoa.\n5.3. Nộp trễ bị trừ 10% tổng điểm cho mỗi ngày trễ; trễ quá 3 ngày nhận 0 điểm.\n\n6. TIÊU CHÍ CHẤM ĐIỂM\n- Mức độ hoàn thành chức năng: 40%\n- Thiết kế cơ sở dữ liệu và kiến trúc: 20%\n- Chất lượng báo cáo: 20%\n- Demo và vấn đáp: 20%\n\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": null,
+  "parse_error": "ValueError: Không tìm thấy JSON object hợp lệ trong câu trả lời của model",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:OK",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "deadline_found:15/12/2026",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_nonempty",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_before:15/12/2026",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "deliverables_min:3",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "grading_min:4",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "quotes_grounded",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false
+}

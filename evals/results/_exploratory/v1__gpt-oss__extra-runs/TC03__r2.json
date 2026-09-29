@@ -1,0 +1,158 @@
+{
+  "case": "TC03",
+  "run": 2,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Yêu cầu làm một trang web bán hàng có giao diện đẹp và đầy đủ các chức năng cần thiết, công nghệ tự do, thực hiện cá nhân hoặc nhóm, nộp vào cuối kỳ.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Làm nhóm hoặc cá nhân tùy ý.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Nộp sản phẩm cuối kỳ.\",\n      \"quote\": \"Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm dựa trên mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày, giờ và định dạng chính xác của hạn nộp (cụ thể ngày tháng năm).\",\n    \"Số lượng thành viên tối đa / tối thiểu trong nhóm (nếu có quy định).\",\n    \"Các chức năng cụ thể cần có (ví dụ: đăng ký/đăng nhập, quản lý sản phẩm, giỏ hàng, thanh toán, quản trị viên, báo cáo, v.v.).\",\n    \"Tiêu chí chi tiết của việc chấm điểm (ví dụ: giao diện, tính năng, bảo mật, tài liệu, code quality, ...).\",\n    \"Định dạng và nội dung tài liệu cần nộp kèm (báo cáo, hướng dẫn cài đặt, mã nguồn, video demo, ...).\",\n    \"Có yêu cầu sử dụng công nghệ, framework, ngôn ngữ cụ thể nào không? (ví dụ: React, Angular, Laravel, Node.js, ...).\",\n    \"Có quy định về việc sử dụng thư viện bên thứ ba, bản quyền, hoặc hosting không?\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ là ngày nào (dd/mm/yyyy) và có thời gian cụ thể không?\",\n    \"Có quy định về số lượng thành viên trong nhóm không? Nếu có, tối đa bao nhiêu người?\",\n    \"Danh sách chức năng tối thiểu mà giảng viên yêu cầu cho trang web bán hàng là gì?\",\n    \"Tiêu chí chấm điểm chi tiết như thế nào? Các hạng mục được đánh giá và trọng số mỗi hạng mục?\",\n    \"Bạn cần nộp những tài liệu gì kèm theo (báo cáo, hướng dẫn cài đặt, video demo, source code, ...)?\",\n    \"Có yêu cầu cụ thể về công nghệ, framework, ngôn ngữ lập trình không?\",\n    \"Có quy định về việc sử dụng thư viện, công cụ, hoặc hosting (ví dụ: GitHub, Heroku, Vercel) không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"“đầy đủ các chức năng cần thiết” không nêu rõ các chức năng cụ thể nào phải có.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    },\n    {\n      \"content\": \"“điểm tùy theo mức độ hoàn thiện của sản phẩm” không mô tả tiêu chí đánh giá chi tiết.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Thu thập thông tin chi tiết còn thiếu (hạn nộp, số thành viên, chức năng yêu cầu, tiêu chí chấm điểm, định dạng nộp).\",\n      \"due\": \"02/10/2026\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Xác định công nghệ, framework phù hợp dựa trên yêu cầu và khả năng nhóm.\",\n      \"due\": \"04/10/2026\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Lập danh sách chức năng chi tiết (đăng ký, đăng nhập, quản lý sản phẩm, giỏ hàng, thanh toán, quản trị, báo cáo...).\",\n      \"due\": \"06/10/2026\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Thiết kế kiến trúc hệ thống, mô hình dữ liệu và giao diện UI/UX.\",\n      \"due\": \"10/10/2026\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Phân công công việc cho các thành viên (hoặc lập kế hoạch cá nhân).\",\n      \"due\": \"12/10/2026\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Triển khai phát triển từng mô-đun (frontend, backend, database, tích hợp thanh toán).\",\n      \"due\": \"30/11/2026\"\n    },\n    {\n      \"step\": 7,\n      \"task\": \"Kiểm thử chức năng, hiệu năng, bảo mật; sửa lỗi.\",\n      \"due\": \"10/12/2026\"\n    },\n    {\n      \"step\": 8,\n      \"task\": \"Chuẩn bị tài liệu nộp: báo cáo, hướng dẫn cài đặt, video demo, mã nguồn trên repository.\",\n      \"due\": \"15/12/2026\"\n    },\n    {\n      \"step\": 9,\n      \"task\": \"Nộp sản phẩm đúng thời hạn theo yêu cầu.\",\n      \"due\": \"Hạn nộp (cần xác nhận)\"\n    }\n  ]\n}",
+  "notes": [],
+  "latency_s": 32.76,
+  "input_tokens": 837,
+  "output_tokens": 1530,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\r\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Yêu cầu làm một trang web bán hàng có giao diện đẹp và đầy đủ các chức năng cần thiết, công nghệ tự do, thực hiện cá nhân hoặc nhóm, nộp vào cuối kỳ.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Dùng công nghệ nào cũng được miễn là phù hợp.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Làm nhóm hoặc cá nhân tùy ý.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Nộp sản phẩm cuối kỳ.",
+        "quote": "Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Điểm dựa trên mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Ngày, giờ và định dạng chính xác của hạn nộp (cụ thể ngày tháng năm).",
+      "Số lượng thành viên tối đa / tối thiểu trong nhóm (nếu có quy định).",
+      "Các chức năng cụ thể cần có (ví dụ: đăng ký/đăng nhập, quản lý sản phẩm, giỏ hàng, thanh toán, quản trị viên, báo cáo, v.v.).",
+      "Tiêu chí chi tiết của việc chấm điểm (ví dụ: giao diện, tính năng, bảo mật, tài liệu, code quality, ...).",
+      "Định dạng và nội dung tài liệu cần nộp kèm (báo cáo, hướng dẫn cài đặt, mã nguồn, video demo, ...).",
+      "Có yêu cầu sử dụng công nghệ, framework, ngôn ngữ cụ thể nào không? (ví dụ: React, Angular, Laravel, Node.js, ...).",
+      "Có quy định về việc sử dụng thư viện bên thứ ba, bản quyền, hoặc hosting không?"
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ là ngày nào (dd/mm/yyyy) và có thời gian cụ thể không?",
+      "Có quy định về số lượng thành viên trong nhóm không? Nếu có, tối đa bao nhiêu người?",
+      "Danh sách chức năng tối thiểu mà giảng viên yêu cầu cho trang web bán hàng là gì?",
+      "Tiêu chí chấm điểm chi tiết như thế nào? Các hạng mục được đánh giá và trọng số mỗi hạng mục?",
+      "Bạn cần nộp những tài liệu gì kèm theo (báo cáo, hướng dẫn cài đặt, video demo, source code, ...)?",
+      "Có yêu cầu cụ thể về công nghệ, framework, ngôn ngữ lập trình không?",
+      "Có quy định về việc sử dụng thư viện, công cụ, hoặc hosting (ví dụ: GitHub, Heroku, Vercel) không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "“đầy đủ các chức năng cần thiết” không nêu rõ các chức năng cụ thể nào phải có.",
+        "quote": "có đầy đủ các chức năng cần thiết"
+      },
+      {
+        "content": "“điểm tùy theo mức độ hoàn thiện của sản phẩm” không mô tả tiêu chí đánh giá chi tiết.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Thu thập thông tin chi tiết còn thiếu (hạn nộp, số thành viên, chức năng yêu cầu, tiêu chí chấm điểm, định dạng nộp).",
+        "due": "02/10/2026"
+      },
+      {
+        "step": 2,
+        "task": "Xác định công nghệ, framework phù hợp dựa trên yêu cầu và khả năng nhóm.",
+        "due": "04/10/2026"
+      },
+      {
+        "step": 3,
+        "task": "Lập danh sách chức năng chi tiết (đăng ký, đăng nhập, quản lý sản phẩm, giỏ hàng, thanh toán, quản trị, báo cáo...).",
+        "due": "06/10/2026"
+      },
+      {
+        "step": 4,
+        "task": "Thiết kế kiến trúc hệ thống, mô hình dữ liệu và giao diện UI/UX.",
+        "due": "10/10/2026"
+      },
+      {
+        "step": 5,
+        "task": "Phân công công việc cho các thành viên (hoặc lập kế hoạch cá nhân).",
+        "due": "12/10/2026"
+      },
+      {
+        "step": 6,
+        "task": "Triển khai phát triển từng mô-đun (frontend, backend, database, tích hợp thanh toán).",
+        "due": "30/11/2026"
+      },
+      {
+        "step": 7,
+        "task": "Kiểm thử chức năng, hiệu năng, bảo mật; sửa lỗi.",
+        "due": "10/12/2026"
+      },
+      {
+        "step": 8,
+        "task": "Chuẩn bị tài liệu nộp: báo cáo, hướng dẫn cài đặt, video demo, mã nguồn trên repository.",
+        "due": "15/12/2026"
+      },
+      {
+        "step": 9,
+        "task": "Nộp sản phẩm đúng thời hạn theo yêu cầu.",
+        "due": "Hạn nộp (cần xác nhận)"
+      }
+    ]
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 7 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "plan có 9 bước"
+    }
+  ],
+  "passed": false
+}

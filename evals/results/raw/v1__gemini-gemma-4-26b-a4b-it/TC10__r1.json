@@ -1,0 +1,38 @@
+{
+  "case": "TC10",
+  "run": 1,
+  "error": "",
+  "raw_text": "```json\n{\n  \"status\": \"INVALID_INPUT\",\n  \"summary\": \"Dữ liệu đầu vào không phải là một đề bài tập lớn hay đồ án. Đây là một đoạn mã ký tự lỗi (corrupted data) có vẻ là một phần header của file PDF.\",\n  \"deadline\": null,\n  \"requirements\": [],\n  \"constraints\": [],\n  \"deliverables\": [],\n  \"grading_criteria\": [],\n  \"missing_info\": [\n    \"Nội dung văn bản của đề bài\",\n    \"Các yêu cầu chức năng/phi chức năng\",\n    \"Quy định về công nghệ và sản phẩm nộp\"\n  ],\n  \"questions\": [\n    \"Bạn có thể gửi lại nội dung đề bài dưới dạng văn bản (text) hoặc tải lên file PDF/Docx chính xác không? Dữ liệu bạn vừa gửi chỉ là các ký tự mã hóa lỗi, không thể đọc được nội dung.\"\n  ],\n  \"ambiguities\": [],\n  \"contradictions\": [],\n  \"invalid_data\": [\n    {\n      \"content\": \"Dữ liệu đầu vào là các ký tự mã hóa nhị phân của file PDF bị lỗi, không chứa thông tin ngôn ngữ tự nhiên để phân tích.\",\n      \"quote\": \"ÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t\t ~~~~ ^^^^ ||||\"\n    }\n  ],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"Dữ liệu đầu vào không phải là một đề bài hợp lệ để thực hiện phân tích.\",\n  \"plan\": []\n}\n```",
+  "notes": [],
+  "latency_s": 23.71,
+  "input_tokens": 838,
+  "output_tokens": 448,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "Đề bài:\nÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t\t ~~~~ ^^^^ ||||\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": null,
+  "parse_error": "ValueError: Không tìm thấy JSON object hợp lệ trong câu trả lời của model",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:INVALID_INPUT",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "no_fabrication",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:24"
+}

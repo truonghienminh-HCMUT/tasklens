@@ -1,0 +1,50 @@
+{
+  "case": "TC03",
+  "run": 2,
+  "error": "",
+  "output": null,
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Đề bài yêu cầu xây dựng một website bán hàng hoàn chỉnh với giao diện đẹp và đầy đủ tính năng. Sinh viên được tự do lựa chọn công nghệ và hình thức làm việc (cá nhân hoặc nhóm) để nộp sản phẩm vào cuối kỳ.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Xây dựng website chuyên về lĩnh vực bán hàng\",\n      \"quote\": \"Làm một trang web bán hàng\"\n    },\n    {\n      \"content\": \"Giao diện phải có tính thẩm mỹ\",\n      \"quote\": \"cho đẹp\"\n    },\n    {\n      \"content\": \"Phải có toàn bộ các chức năng nghiệp vụ của một web bán hàng\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Tùy chọn công nghệ sử dụng miễn là hợp lý\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp\"\n    },\n    {\n      \"content\": \"Linh hoạt về số lượng thành viên tham gia\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Sản phẩm phần mềm (website) hoàn thiện\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số tỷ lệ thuận với mức độ hoàn chỉnh của các chức năng và sản phẩm\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"missing_info\": [\n    \"Thời gian nộp bài cụ thể (ngày/tháng/năm)\",\n    \"Danh sách các chức năng bắt buộc phải có (ví dụ: Thanh toán, Giỏ hàng, Admin, Quản lý kho...)\",\n    \"Yêu cầu về tài liệu đi kèm (Báo cáo word, sơ đồ thiết kế Database, slide thuyết trình)\",\n    \"Cách thức nộp bài (Nộp mã nguồn qua LMS, link Github, hay triển khai lên host)\",\n    \"Số lượng thành viên tối đa nếu làm nhóm\"\n  ],\n  \"questions\": [\n    \"Bạn dự định làm cá nhân hay nhóm? Nếu làm nhóm thì có mấy người?\",\n    \"Bạn đã có dự định sử dụng ngôn ngữ hay framework nào chưa (ví dụ: HTML/CSS/JS thuần, React, PHP, hay Java)?\",\n    \"Ngày cuối cùng của học kỳ bạn phải nộp bài là ngày nào?\",\n    \"Thầy/cô có cung cấp bảng tiêu chí (rubric) chấm điểm chi tiết không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Tiêu chuẩn 'đẹp' mang tính chủ quan, không có thước đo cụ thể\",\n      \"quote\": \"cho đẹp\"\n    },\n    {\n      \"content\": \"Cụm từ 'chức năng cần thiết' không xác định rõ phạm vi tối thiểu (MVP)\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": null,\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Xác nhận lại yêu cầu: Chốt danh sách tính năng (Scope) và công nghệ sử dụng\",\n      \"due\": \"Ngày 1-2\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Thiết kế: Vẽ giao diện (Figma) và thiết kế Cơ sở dữ liệu (ERD)\",\n      \"due\": \"Ngày 3-5\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Lập trình Back-end: Xây dựng API và xử lý dữ liệu\",\n      \"due\": \"Tuần 2\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Lập trình Front-end: Xây dựng giao diện và kết nối API\",\n      \"due\": \"Tuần 3\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Kiểm thử và Hoàn thiện: Fix lỗi, tối ưu giao diện và đóng gói nộp bài\",\n      \"due\": \"Tuần 4/Trước hạn nộp\"\n    }\n  ]\n}",
+  "parse_error": "ValidationError: 1 validation error for Analysis\nrefusal_reason\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type",
+  "notes": [],
+  "latency_s": 18.75,
+  "input_tokens": 807,
+  "output_tokens": 1035,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent_preview": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "sent_chars": [
+    309
+  ],
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false
+}

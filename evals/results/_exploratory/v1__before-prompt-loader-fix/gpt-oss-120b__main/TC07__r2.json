@@ -1,0 +1,167 @@
+{
+  "case": "TC07",
+  "run": 2,
+  "error": "",
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Sinh viên phải triển khai ứng dụng LabBooking với các chức năng, ràng buộc công nghệ và nộp báo cáo, mã nguồn, video demo; có các tiêu chí chấm điểm và hình phạt nộp trễ.",
+    "deadline": {
+      "value": "15/12/2026 23:59",
+      "quote": "Hạn nộp bài chính thức: 23:59 ngày 15/12/2026"
+    },
+    "requirements": [
+      {
+        "content": "Mức độ hoàn thành chức năng: 40%",
+        "quote": "Mức độ hoàn thành chức năng: 40%"
+      },
+      {
+        "content": "Thiết kế cơ sở dữ liệu và kiến trúc: 20%",
+        "quote": "Thiết kế cơ sở dữ liệu và kiến trúc: 20%"
+      },
+      {
+        "content": "Chất lượng báo cáo: 20%",
+        "quote": "Chất lượng báo cáo: 20%"
+      },
+      {
+        "content": "Demo và vấn đáp: 20%",
+        "quote": "Demo và vấn đáp: 20%"
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).",
+        "quote": "Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL)."
+      },
+      {
+        "content": "Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).",
+        "quote": "Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...)."
+      },
+      {
+        "content": "Giao diện hiển thị tốt trên màn hình điện thoại (responsive).",
+        "quote": "Giao diện hiển thị tốt trên màn hình điện thoại (responsive)."
+      },
+      {
+        "content": "Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.",
+        "quote": "Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit."
+      },
+      {
+        "content": "Bài tập thực hiện theo nhóm 3 sinh viên.",
+        "quote": "Bài tập thực hiện theo nhóm 3 sinh viên."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.",
+        "quote": "Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt."
+      },
+      {
+        "content": "Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).",
+        "quote": "Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository)."
+      },
+      {
+        "content": "Video demo không quá 5 phút.",
+        "quote": "Video demo không quá 5 phút."
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Mức độ hoàn thành chức năng: 40%",
+        "quote": "Mức độ hoàn thành chức năng: 40%"
+      },
+      {
+        "content": "Thiết kế cơ sở dữ liệu và kiến trúc: 20%",
+        "quote": "Thiết kế cơ sở dữ liệu và kiến trúc: 20%"
+      },
+      {
+        "content": "Chất lượng báo cáo: 20%",
+        "quote": "Chất lượng báo cáo: 20%"
+      },
+      {
+        "content": "Demo và vấn đáp: 20%",
+        "quote": "Demo và vấn đáp: 20%"
+      }
+    ],
+    "missing_info": [
+      "Điểm hoặc mức độ hoàn thành cho phần Thiết kế cơ sở dữ liệu và kiến trúc",
+      "Điểm hoặc mức độ hoàn thành cho phần Chất lượng báo cáo",
+      "Điểm hoặc mức độ hoàn thành cho phần Demo và vấn đáp",
+      "Xác nhận rằng 60% là 60% của phần chức năng (40% tổng điểm) hay 60% của toàn bộ bài tập"
+    ],
+    "questions": [
+      "Bạn đã hoàn thành các phần Thiết kế cơ sở dữ liệu và kiến trúc, Báo cáo và Demo ở mức độ nào (phần trăm hoặc điểm)?",
+      "Khi nói \"60% chức năng\" bạn có nghĩa là 60% của tổng điểm cho chức năng (40% của điểm toàn khóa) hay 60% của toàn bộ bài tập?"
+    ],
+    "ambiguities": [
+      {
+        "content": "Mức độ hoàn thành chức năng 60% chưa rõ cách tính vào tổng điểm.",
+        "quote": "Tôi đã làm xong khoảng 60% chức năng"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Thu thập thông tin về mức độ hoàn thành các phần còn lại (CSDL, báo cáo, demo) và xác nhận cách tính 60% chức năng.",
+        "due": "05/12/2026"
+      },
+      {
+        "step": 2,
+        "task": "Tính điểm thô cho từng tiêu chí dựa trên phần trăm/điểm đã cung cấp.",
+        "due": "07/12/2026"
+      },
+      {
+        "step": 3,
+        "task": "Áp dụng hình phạt nộp trễ 10% cho mỗi ngày (2 ngày => -20%).",
+        "due": "08/12/2026"
+      },
+      {
+        "step": 4,
+        "task": "Cộng tổng điểm sau khi trừ phạt và xác định xem có đạt ngưỡng đậu (thường ≥ 5.0/10) hay không.",
+        "due": "09/12/2026"
+      }
+    ]
+  },
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Sinh viên phải triển khai ứng dụng LabBooking với các chức năng, ràng buộc công nghệ và nộp báo cáo, mã nguồn, video demo; có các tiêu chí chấm điểm và hình phạt nộp trễ.\",\n  \"deadline\": {\n    \"value\": \"15/12/2026 23:59\",\n    \"quote\": \"Hạn nộp bài chính thức: 23:59 ngày 15/12/2026\"\n  },\n  \"requirements\": [\n    {\n      \"content\": \"Mức độ hoàn thành chức năng: 40%\",\n      \"quote\": \"Mức độ hoàn thành chức năng: 40%\"\n    },\n    {\n      \"content\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\",\n      \"quote\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\"\n    },\n    {\n      \"content\": \"Chất lượng báo cáo: 20%\",\n      \"quote\": \"Chất lượng báo cáo: 20%\"\n    },\n    {\n      \"content\": \"Demo và vấn đáp: 20%\",\n      \"quote\": \"Demo và vấn đáp: 20%\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\",\n      \"quote\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\"\n    },\n    {\n      \"content\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\",\n      \"quote\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\"\n    },\n    {\n      \"content\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\",\n      \"quote\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\"\n    },\n    {\n      \"content\": \"Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\",\n      \"quote\": \"Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\"\n    },\n    {\n      \"content\": \"Bài tập thực hiện theo nhóm 3 sinh viên.\",\n      \"quote\": \"Bài tập thực hiện theo nhóm 3 sinh viên.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\",\n      \"quote\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\"\n    },\n    {\n      \"content\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\",\n      \"quote\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\"\n    },\n    {\n      \"content\": \"Video demo không quá 5 phút.\",\n      \"quote\": \"Video demo không quá 5 phút.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Mức độ hoàn thành chức năng: 40%\",\n      \"quote\": \"Mức độ hoàn thành chức năng: 40%\"\n    },\n    {\n      \"content\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\",\n      \"quote\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\"\n    },\n    {\n      \"content\": \"Chất lượng báo cáo: 20%\",\n      \"quote\": \"Chất lượng báo cáo: 20%\"\n    },\n    {\n      \"content\": \"Demo và vấn đáp: 20%\",\n      \"quote\": \"Demo và vấn đáp: 20%\"\n    }\n  ],\n  \"missing_info\": [\n    \"Điểm hoặc mức độ hoàn thành cho phần Thiết kế cơ sở dữ liệu và kiến trúc\",\n    \"Điểm hoặc mức độ hoàn thành cho phần Chất lượng báo cáo\",\n    \"Điểm hoặc mức độ hoàn thành cho phần Demo và vấn đáp\",\n    \"Xác nhận rằng 60% là 60% của phần chức năng (40% tổng điểm) hay 60% của toàn bộ bài tập\"\n  ],\n  \"questions\": [\n    \"Bạn đã hoàn thành các phần Thiết kế cơ sở dữ liệu và kiến trúc, Báo cáo và Demo ở mức độ nào (phần trăm hoặc điểm)?\",\n    \"Khi nói \\\"60% chức năng\\\" bạn có nghĩa là 60% của tổng điểm cho chức năng (40% của điểm toàn khóa) hay 60% của toàn bộ bài tập?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Mức độ hoàn thành chức năng 60% chưa rõ cách tính vào tổng điểm.\",\n      \"quote\": \"Tôi đã làm xong khoảng 60% chức năng\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Thu thập thông tin về mức độ hoàn thành các phần còn lại (CSDL, báo cáo, demo) và xác nhận cách tính 60% chức năng.\",\n      \"due\": \"05/12/2026\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Tính điểm thô cho từng tiêu chí dựa trên phần trăm/điểm đã cung cấp.\",\n      \"due\": \"07/12/2026\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Áp dụng hình phạt nộp trễ 10% cho mỗi ngày (2 ngày => -20%).\",\n      \"due\": \"08/12/2026\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Cộng tổng điểm sau khi trừ phạt và xác định xem có đạt ngưỡng đậu (thường ≥ 5.0/10) hay không.\",\n      \"due\": \"09/12/2026\"\n    }\n  ]\n}",
+  "parse_error": "",
+  "notes": [],
+  "latency_s": 28.16,
+  "input_tokens": 1538,
+  "output_tokens": 2011,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent_preview": [
+    "Đề bài:\nĐỀ BÀI TẬP LỚN (ĐỀ MẪU DÙNG ĐỂ KIỂM THỬ)\nMÔN HỌC: LẬP TRÌNH WEB — HỌC KỲ 1, NĂM HỌC 2026–2027\nGiảng viên phụ trách: ThS. Nguyễn Văn An — email: nguyenvanan@example.edu.vn — ĐT: 0901 234 567\nNgày giao đề: 15/09/2026\n\n1. MÔ TẢ BÀI TOÁN\nPhòng thí nghiệm của khoa hiện quản lý lịch sử dụng phòng lab bằng một bảng tính dùng chung nên thường xuyên xảy ra trùng lịch. Sinh viên xây dựng ứng dụng web \"LabBooking\" cho phép đặt và quản lý lịch sử dụng phòng lab.\n\n2. YÊU CẦU CHỨC NĂNG\n2.1. Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\n2.2. Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\n2.3. Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\n2.4. Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\n2.5. Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\n\n3. YÊU CẦU PHI CHỨC NĂNG VÀ RÀNG BUỘC\n3.1. Bài tập thực hiện theo nhóm 3 sinh viên.\n3.2. Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\n3.3. Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\n3.4. Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\n3.5. Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\n\n4. SẢN PHẨM PHẢI NỘP\n4.1. Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\n4.2. Đường dẫn repository GitHu"
+  ],
+  "sent_chars": [
+    2166
+  ],
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:REFUSED",
+      "pass": false,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "refusal_mentions:giảng viên",
+      "pass": false,
+      "detail": "lời từ chối nhắc 'giảng viên': False"
+    },
+    {
+      "check": "no_score_claim",
+      "pass": true,
+      "detail": "không khẳng định điểm số/kết quả"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-28T23:50:37"
+}

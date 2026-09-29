@@ -1,0 +1,50 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "output": null,
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Đề bài yêu cầu xây dựng một website bán hàng hoàn thiện với giao diện đẹp và đầy đủ tính năng. Sinh viên được tự do lựa chọn công nghệ và hình thức làm việc (cá nhân hoặc nhóm) để nộp vào cuối kỳ.\",\n  \"deadline\": {\n    \"value\": null,\n    \"quote\": \"Nộp vào cuối kỳ\"\n  },\n  \"requirements\": [\n    {\n      \"content\": \"Xây dựng website bán hàng có giao diện đẹp.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp\"\n    },\n    {\n      \"content\": \"Phát triển đầy đủ các chức năng cần thiết của một trang thương mại điện tử.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Tự do lựa chọn công nghệ lập trình miễn là phù hợp với bài toán.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp\"\n    },\n    {\n      \"content\": \"Có thể làm việc theo nhóm hoặc làm cá nhân.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Sản phẩm website bán hàng hoàn thiện.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số dựa trên mức độ hoàn thiện về cả tính năng lẫn giao diện của website.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày và giờ nộp bài cụ thể (Deadline chính xác).\",\n    \"Danh sách các chức năng bắt buộc phải có (VD: Giỏ hàng, Thanh toán, Quản lý đơn hàng, Admin panel...).\",\n    \"Quy định về số lượng thành viên tối đa trong một nhóm.\",\n    \"Các tài liệu đi kèm cần nộp (Báo cáo word, slide thuyết trình, video demo, hay mã nguồn đẩy lên GitHub/nộp file nén).\",\n    \"Môi trường triển khai (Chạy localhost hay phải deploy lên host/VPS).\"\n  ],\n  \"questions\": [\n    \"Bạn dự định làm cá nhân hay nhóm? Nếu làm nhóm thì có bao nhiêu người?\",\n    \"Bạn đã chọn được bộ công nghệ (Tech Stack) nào chưa (VD: React - NodeJS, PHP - Laravel, hay Java Spring)?\",\n    \"Giảng viên có đưa ra danh mục chức năng tối thiểu (Core features) không hay bạn tự định nghĩa?\",\n    \"Hạn cuối chính xác của học kỳ này là ngày nào?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Khái niệm 'đẹp' mang tính cảm tính, không có tiêu chuẩn kỹ thuật cụ thể.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp\"\n    },\n    {\n      \"content\": \"Cụm từ 'chức năng cần thiết' không xác định rõ phạm vi (scope) của dự án.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": null,\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Xác định danh sách chức năng (Requirement Definition) và chọn công nghệ.\",\n      \"due\": \"Tuần 1\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Thiết kế cơ sở dữ liệu (Database Design) và sơ đồ chức năng.\",\n      \"due\": \"Tuần 2\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Thiết kế giao diện (UI/UX Design) cho trang người dùng và trang quản trị.\",\n      \"due\": \"Tuần 2\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Lập trình các chức năng cốt lõi (Backend & Frontend integration).\",\n      \"due\": \"Tuần 3-5\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Kiểm thử, fix bug và làm đẹp giao diện (CSS/Animation).\",\n      \"due\": \"Tuần 6\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Viết báo cáo và đóng gói sản phẩm để nộp.\",\n      \"due\": \"Tuần cuối\"\n    }\n  ]\n}",
+  "parse_error": "ValidationError: 2 validation errors for Analysis\ndeadline.value\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\nrefusal_reason\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type",
+  "notes": [],
+  "latency_s": 27.62,
+  "input_tokens": 807,
+  "output_tokens": 1072,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent_preview": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "sent_chars": [
+    309
+  ],
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false
+}

@@ -1,0 +1,53 @@
+{
+  "case": "TC05",
+  "run": 1,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"OK\",\n  \"summary\": \"Sinh viên cần xây dựng ứng dụng web LabBooking để quản lý đặt phòng lab, bao gồm các chức năng đăng ký, đặt phòng, duyệt yêu cầu và xuất báo cáo CSV. Dự án phải hoàn thành cá nhân, đáp ứng các ràng buộc công nghệ và giao diện responsive, nộp báo cáo, mã nguồn và video demo trước 15/12/2026 23:59.\",\n  \"deadline\": {\n    \"value\": \"15/12/2026 23:59\",\n    \"quote\": \"Hạn nộp bài chính thức: 23:59 ngày 15/12/2026\"\n  },\n  \"requirements\": [\n    {\n      \"content\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\",\n      \"quote\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\"\n    },\n    {\n      \"content\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\",\n      \"quote\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\"\n    },\n    {\n      \"content\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\",\n      \"quote\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\"\n    },\n    {\n      \"content\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\",\n      \"quote\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\"\n    },\n    {\n      \"content\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\",\n      \"quote\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Bài tập thực hiện cá nhân, không làm nhóm.\",\n      \"quote\": \"Bài tập thực hiện cá nhân, không làm nhóm.\"\n    },\n    {\n      \"content\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\",\n      \"quote\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\"\n    },\n    {\n      \"content\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\",\n      \"quote\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\"\n    },\n    {\n      \"content\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\",\n      \"quote\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\"\n    },\n    {\n      \"content\": \"Mã nguồn quản lý bằng Git, mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit.\",\n      \"quote\": \"Mã nguồn quản lý bằng Git, mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit.\"\n    },\n    {\n      \"content\": \"Toàn bộ backend bắt buộc viết bằng Java (Spring Boot).\",\n      \"quote\": \"Toàn bộ backend bắt buộc viết bằng Java (Spring Boot).\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\",\n      \"quote\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\"\n    },\n    {\n      \"content\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\",\n      \"quote\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\"\n    },\n    {\n      \"content\": \"Video demo không quá 5 phút.\",\n      \"quote\": \"Video demo không quá 5 phút.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Mức độ hoàn thành chức năng: 40%\",\n      \"quote\": \"- Mức độ hoàn thành chức năng: 40%\"\n    },\n    {\n      \"content\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\",\n      \"quote\": \"- Thiết kế cơ sở dữ liệu và kiến trúc: 20%\"\n    },\n    {\n      \"content\": \"Chất lượng báo cáo: 20%\",\n      \"quote\": \"- Chất lượng báo cáo: 20%\"\n    },\n    {\n      \"content\": \"Demo và vấn đáp: 20%\",\n      \"quote\": \"- Demo và vấn đáp: 20%\"\n    }\n  ],\n  \"missing_info\": [\n    \"Định dạng chi tiết của email trường (domain) để kiểm tra khi đăng ký.\",\n    \"Số lượng phòng lab, danh sách phòng và các ca thời gian (ví dụ: ca sáng, chiều, tối).\",\n    \"Yêu cầu về môi trường triển khai (máy chủ, Docker, cloud...).\",\n    \"Chi tiết về quyền truy cập của người dùng (có cần vai trò khác ngoài sinh viên và quản trị viên không?).\"\n  ],\n  \"questions\": [\n    \"Yêu cầu 3.2 cho phép backend Node.js hoặc Python, trong khi yêu cầu 3.6 bắt buộc Java Spring Boot. Đội ngũ muốn dùng công nghệ nào?\",\n    \"Mục 3.5 nói 'mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit' nhưng 3.1 yêu cầu thực hiện cá nhân. Có nên làm nhóm 3 người hay làm cá nhân?\",\n    \"Nếu làm cá nhân, có cần đáp ứng yêu cầu về số commit trong mục 3.5 không?\",\n    \"Có cần triển khai hệ thống email thông báo thực tế hay chỉ hiển thị thông báo trong ứng dụng?\",\n    \"Yêu cầu về thời gian ca (định dạng, độ dài) và quy tắc trùng lịch chi tiết là gì?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Mâu thuẫn giữa lựa chọn backend (Node.js/Python) và yêu cầu bắt buộc Java Spring Boot.\",\n      \"quote\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); ...; Toàn bộ backend bắt buộc viết bằng Java (Spring Boot).\"\n    },\n    {\n      \"content\": \"Mục 3.5 quy định commit cho nhóm 3 người, nhưng đề bài 3.1 yêu cầu làm cá nhân.\",\n      \"quote\": \"Mã nguồn quản lý bằng Git, mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit.; Bài tập thực hiện cá nhân, không làm nhóm.\"\n    }\n  ],\n  \"contradictions\": [\n    {\n      \"description\": \"Lựa chọn công nghệ backend mâu thuẫn.\",\n      \"quote_a\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\",\n      \"quote_b\": \"Toàn bộ backend bắt buộc viết bằng Java (Spring Boot).\"\n    },\n    {\n      \"description\": \"Yêu cầu về cách thức thực hiện (cá nhân vs nhóm 3 người).\",\n      \"quote_a\": \"Bài tập thực hiện cá nhân, không làm nhóm.\",\n      \"quote_b\": \"Mã nguồn quản lý bằng Git, mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit.\"\n    }\n  ],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": [\n    {\n      \"",
+  "notes": [],
+  "latency_s": 26.79,
+  "input_tokens": 1518,
+  "output_tokens": 3072,
+  "model_calls": 1,
+  "stop_reasons": [
+    "length"
+  ],
+  "sent": [
+    "Đề bài:\nĐỀ BÀI TẬP LỚN (ĐỀ MẪU DÙNG ĐỂ KIỂM THỬ)\r\nMÔN HỌC: LẬP TRÌNH WEB — HỌC KỲ 1, NĂM HỌC 2026–2027\r\nGiảng viên phụ trách: ThS. Nguyễn Văn An — email: nguyenvanan@example.edu.vn — ĐT: 0901 234 567\r\nNgày giao đề: 15/09/2026\r\n\r\n1. MÔ TẢ BÀI TOÁN\r\nPhòng thí nghiệm của khoa hiện quản lý lịch sử dụng phòng lab bằng một bảng tính dùng chung nên thường xuyên xảy ra trùng lịch. Sinh viên xây dựng ứng dụng web \"LabBooking\" cho phép đặt và quản lý lịch sử dụng phòng lab.\r\n\r\n2. YÊU CẦU CHỨC NĂNG\r\n2.1. Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\r\n2.2. Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\r\n2.3. Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\r\n2.4. Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\r\n2.5. Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\r\n\r\n3. YÊU CẦU PHI CHỨC NĂNG VÀ RÀNG BUỘC\r\n3.1. Bài tập thực hiện cá nhân, không làm nhóm.\r\n3.2. Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\r\n3.3. Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\r\n3.4. Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\r\n3.5. Mã nguồn quản lý bằng Git, mỗi thành viên trong nhóm 3 người có tối thiểu 10 commit.\r\n3.6. Toàn bộ backend bắt buộc viết bằng Java (Spring Boot).\r\n\r\n4. SẢN PHẨM PHẢI NỘP\r\n4.1. Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\r\n4.2. Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\r\n4.3. Video demo không quá 5 phút.\r\n\r\n5. TIẾN ĐỘ VÀ HẠN NỘP\r\n5.1. Mốc giữa kỳ: nộp bản thiết kế cơ sở dữ liệu trước 23:59 ngày 10/11/2026.\r\n5.2. Hạn nộp bài chính thức: 23:59 ngày 15/12/2026, nộp qua hệ thống LMS của khoa.\r\n5.3. Nộp trễ bị trừ 10% tổng điểm cho mỗi ngày trễ; trễ quá 3 ngày nhận 0 điểm.\r\n\r\n6. TIÊU CHÍ CHẤM ĐIỂM\r\n- Mức độ hoàn thành chức năng: 40%\r\n- Thiết kế cơ sở dữ liệu và kiến trúc: 20%\r\n- Chất lượng báo cáo: 20%\r\n- Demo và vấn đáp: 20%\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": null,
+  "parse_error": "ValueError: Không tìm thấy JSON object hợp lệ trong câu trả lời của model",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "contradictions_min:2",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "contradiction_mentions:cá nhân|nhóm",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "contradiction_mentions:Java|Spring",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "questions_min:1",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "quotes_grounded",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:38"
+}

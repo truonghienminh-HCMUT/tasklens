@@ -1,0 +1,62 @@
+{
+  "case": "TC01",
+  "run": 3,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"OK\",\n  \"summary\": \"Sinh viên xây dựng ứng dụng web LabBooking để đặt và quản lý lịch sử dụng phòng lab, gồm các chức năng đăng ký, đăng nhập, đặt phòng, duyệt yêu cầu và xuất báo cáo CSV. Dự án thực hiện theo nhóm 3 người, dùng Node.js/Express hoặc Django với MySQL/PostgreSQL, giao diện responsive và quản lý mã nguồn bằng Git.\",\n  \"deadline\": {\n    \"value\": \"15/12/2026 23:59\",\n    \"quote\": \"Hạn nộp bài chính thức: 23:59 ngày 15/12/2026, nộp qua hệ thống LMS của khoa.\"\n  },\n  \"requirements\": [\n    {\n      \"content\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\",\n      \"quote\": \"Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\"\n    },\n    {\n      \"content\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\",\n      \"quote\": \"Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\"\n    },\n    {\n      \"content\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\",\n      \"quote\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\"\n    },\n    {\n      \"content\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\",\n      \"quote\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\"\n    },\n    {\n      \"content\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\",\n      \"quote\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Bài tập thực hiện theo nhóm 3 sinh viên.\",\n      \"quote\": \"Bài tập thực hiện theo nhóm 3 sinh viên.\"\n    },\n    {\n      \"content\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\",\n      \"quote\": \"Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\"\n    },\n    {\n      \"content\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\",\n      \"quote\": \"Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\"\n    },\n    {\n      \"content\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\",\n      \"quote\": \"Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\"\n    },\n    {\n      \"content\": \"Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\",\n      \"quote\": \"Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\",\n      \"quote\": \"Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\"\n    },\n    {\n      \"content\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\",\n      \"quote\": \"Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\"\n    },\n    {\n      \"content\": \"Video demo không quá 5 phút.\",\n      \"quote\": \"Video demo không quá 5 phút.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Mức độ hoàn thành chức năng: 40%\",\n      \"quote\": \"Mức độ hoàn thành chức năng: 40%\"\n    },\n    {\n      \"content\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\",\n      \"quote\": \"Thiết kế cơ sở dữ liệu và kiến trúc: 20%\"\n    },\n    {\n      \"content\": \"Chất lượng báo cáo: 20%\",\n      \"quote\": \"Chất lượng báo cáo: 20%\"\n    },\n    {\n      \"content\": \"Demo và vấn đáp: 20%\",\n      \"quote\": \"Demo và vấn đáp: 20%\"\n    }\n  ],\n  \"missing_info\": [\n    \"Chi tiết định dạng CSV (các cột, tiêu đề).\",\n    \"Cơ chế thông báo kết quả cho sinh viên (push notification, email, hoặc trong app).\",\n    \"Yêu cầu bảo mật chi tiết (thuật toán băm, salt, SSL).\",\n    \"Yêu cầu về môi trường triển khai (hosting, Docker, CI/CD).\"\n  ],\n  \"questions\": [\n    \"Bạn muốn thông báo kết quả đặt phòng cho sinh viên qua email, push notification, hay chỉ hiển thị trong giao diện web?\",\n    \"CSV báo cáo cần bao gồm những trường dữ liệu nào (số lần đặt, thời gian, phòng, người đặt,...)?\",\n    \"Thuật toán băm mật khẩu ưu tiên nào (bcrypt, argon2, ...)?\",\n    \"Có yêu cầu cụ thể về việc triển khai (ví dụ: trên server nội bộ, cloud, Docker) không?\",\n    \"Có cần giao diện riêng cho quản trị viên để duyệt yêu cầu và xuất CSV không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Câu \\\"sinh viên nhận thông báo kết quả trong ứng dụng\\\" không nêu rõ phương thức thông báo (email, push, UI).\",\n      \"quote\": \"Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\"\n    },\n    {\n      \"content\": \"Không định nghĩa rõ \\\"ca\\\" (thời gian trong ngày) và cách kiểm tra trùng lịch.\",\n      \"quote\": \"Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\"\n    },\n    {\n      \"content\": \"CSV báo cáo tần suất sử dụng chỉ nói \\\"theo tháng\\\" nhưng không chi tiết các cột cần có.\",\n      \"quote\": \"Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": null,\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Thành lập nhóm 3 người, tạo repository GitHub, thiết lập môi trường phát triển (Node.js hoặc Django).\",\n      \"due\": \"20/09/2026\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Phân tích yêu cầu chi tiết, viết tài liệu",
+  "notes": [],
+  "latency_s": 8.32,
+  "input_tokens": 1494,
+  "output_tokens": 3072,
+  "model_calls": 1,
+  "stop_reasons": [
+    "length"
+  ],
+  "sent": [
+    "Đề bài:\nĐỀ BÀI TẬP LỚN (ĐỀ MẪU DÙNG ĐỂ KIỂM THỬ)\r\nMÔN HỌC: LẬP TRÌNH WEB — HỌC KỲ 1, NĂM HỌC 2026–2027\r\nGiảng viên phụ trách: ThS. Nguyễn Văn An — email: nguyenvanan@example.edu.vn — ĐT: 0901 234 567\r\nNgày giao đề: 15/09/2026\r\n\r\n1. MÔ TẢ BÀI TOÁN\r\nPhòng thí nghiệm của khoa hiện quản lý lịch sử dụng phòng lab bằng một bảng tính dùng chung nên thường xuyên xảy ra trùng lịch. Sinh viên xây dựng ứng dụng web \"LabBooking\" cho phép đặt và quản lý lịch sử dụng phòng lab.\r\n\r\n2. YÊU CẦU CHỨC NĂNG\r\n2.1. Người dùng đăng ký, đăng nhập bằng email trường; mật khẩu phải được băm (hash) trước khi lưu.\r\n2.2. Sinh viên xem lịch trống theo tuần và gửi yêu cầu đặt phòng (chọn phòng, ngày, ca).\r\n2.3. Hệ thống tự động chặn yêu cầu đặt phòng bị trùng với ca đã được duyệt.\r\n2.4. Quản trị viên duyệt hoặc từ chối yêu cầu; sinh viên nhận thông báo kết quả trong ứng dụng.\r\n2.5. Quản trị viên xuất báo cáo tần suất sử dụng từng phòng theo tháng (định dạng CSV).\r\n\r\n3. YÊU CẦU PHI CHỨC NĂNG VÀ RÀNG BUỘC\r\n3.1. Bài tập thực hiện theo nhóm 3 sinh viên.\r\n3.2. Backend sử dụng Node.js (Express) hoặc Python (Django); cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL).\r\n3.3. Không sử dụng nền tảng low-code/no-code (Firebase, Bubble...).\r\n3.4. Giao diện hiển thị tốt trên màn hình điện thoại (responsive).\r\n3.5. Mã nguồn quản lý bằng Git, mỗi thành viên có tối thiểu 10 commit.\r\n\r\n4. SẢN PHẨM PHẢI NỘP\r\n4.1. Báo cáo PDF không quá 20 trang, gồm: phân tích yêu cầu, thiết kế CSDL, kiến trúc hệ thống, hướng dẫn cài đặt.\r\n4.2. Đường dẫn repository GitHub (chế độ công khai hoặc mời giảng viên vào repository).\r\n4.3. Video demo không quá 5 phút.\r\n\r\n5. TIẾN ĐỘ VÀ HẠN NỘP\r\n5.1. Mốc giữa kỳ: nộp bản thiết kế cơ sở dữ liệu trước 23:59 ngày 10/11/2026.\r\n5.2. Hạn nộp bài chính thức: 23:59 ngày 15/12/2026, nộp qua hệ thống LMS của khoa.\r\n5.3. Nộp trễ bị trừ 10% tổng điểm cho mỗi ngày trễ; trễ quá 3 ngày nhận 0 điểm.\r\n\r\n6. TIÊU CHÍ CHẤM ĐIỂM\r\n- Mức độ hoàn thành chức năng: 40%\r\n- Thiết kế cơ sở dữ liệu và kiến trúc: 20%\r\n- Chất lượng báo cáo: 20%\r\n- Demo và vấn đáp: 20%\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": null,
+  "parse_error": "ValueError: Không tìm thấy JSON object hợp lệ trong câu trả lời của model",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:OK",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "deadline_found:15/12/2026",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_nonempty",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "plan_before:15/12/2026",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "deliverables_min:3",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "grading_min:4",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "quotes_grounded",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false
+}

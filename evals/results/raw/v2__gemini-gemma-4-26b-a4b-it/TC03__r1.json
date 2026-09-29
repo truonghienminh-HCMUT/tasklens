@@ -1,0 +1,103 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Sinh viên cần xây dựng một trang web bán hàng với giao diện đẹp và đầy đủ chức năng. Có thể thực hiện theo hình thức cá nhân hoặc làm việc nhóm.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Xây dựng một trang web bán hàng.\",\n      \"quote\": \"Làm một trang web bán hàng\"\n    },\n    {\n      \"content\": \"Trang web phải đẹp và đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Tự chọn công nghệ phù hợp để thực hiện.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Có thể làm việc theo nhóm hoặc cá nhân.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Một sản phẩm trang web bán hàng hoàn thiện.\",\n      \"quote\": \"Làm một trang web bán hàng\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số dựa trên mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Hạn nộp chính thức (ngày/tháng/năm).\",\n    \"Danh sách các chức năng cụ thể được coi là 'cần thiết'.\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ chính xác là ngày nào?\",\n    \"Các chức năng cụ thể nào bắt buộc phải có trong trang web?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Khái niệm 'đẹp' và 'đầy đủ chức năng' không được định nghĩa cụ thể.\",\n      \"quote\": \"cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": []\n}",
+  "notes": [],
+  "latency_s": 42.81,
+  "input_tokens": 1610,
+  "output_tokens": 525,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "<yeu_cau_nguoi_dung>\nPhân rã đề bài này và lập kế hoạch thực hiện cho tôi.\n</yeu_cau_nguoi_dung>\n\n<thong_tin_bo_sung>\n(không có)\n</thong_tin_bo_sung>\n\n<canh_bao_he_thong>\n(không có)\n</canh_bao_he_thong>\n\n<de_bai>\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n</de_bai>"
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Sinh viên cần xây dựng một trang web bán hàng với giao diện đẹp và đầy đủ chức năng. Có thể thực hiện theo hình thức cá nhân hoặc làm việc nhóm.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Xây dựng một trang web bán hàng.",
+        "quote": "Làm một trang web bán hàng"
+      },
+      {
+        "content": "Trang web phải đẹp và đầy đủ các chức năng cần thiết.",
+        "quote": "cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Tự chọn công nghệ phù hợp để thực hiện.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Có thể làm việc theo nhóm hoặc cá nhân.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Một sản phẩm trang web bán hàng hoàn thiện.",
+        "quote": "Làm một trang web bán hàng"
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Điểm số dựa trên mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Hạn nộp chính thức (ngày/tháng/năm).",
+      "Danh sách các chức năng cụ thể được coi là 'cần thiết'."
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ chính xác là ngày nào?",
+      "Các chức năng cụ thể nào bắt buộc phải có trong trang web?"
+    ],
+    "ambiguities": [
+      {
+        "content": "Khái niệm 'đẹp' và 'đầy đủ chức năng' không được định nghĩa cụ thể.",
+        "quote": "cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": false,
+      "detail": "ambiguities: 1 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": true,
+      "detail": "plan có 0 bước"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:34"
+}

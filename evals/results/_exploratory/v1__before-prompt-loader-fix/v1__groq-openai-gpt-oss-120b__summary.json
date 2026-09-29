@@ -1,0 +1,73 @@
+{
+  "version": "v1",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "runs_per_case": 3,
+  "timestamp": "2026-09-28T23:50:37",
+  "regraded_from_raw": true,
+  "cases": {
+    "TC01": {
+      "result": "FLAKY",
+      "runs_pass": 2,
+      "runs": 3
+    },
+    "TC02": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC03": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC04": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC05": {
+      "result": "FLAKY",
+      "runs_pass": 2,
+      "runs": 3
+    },
+    "TC06": {
+      "result": "PASS",
+      "runs_pass": 3,
+      "runs": 3
+    },
+    "TC07": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC08": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC09": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    },
+    "TC10": {
+      "result": "PASS",
+      "runs_pass": 3,
+      "runs": 3
+    },
+    "TC11": {
+      "result": "FAIL",
+      "runs_pass": 0,
+      "runs": 3
+    }
+  },
+  "cases_pass_strict": 2,
+  "cases_total": 11,
+  "run_pass_rate": 0.303,
+  "json_valid_rate": 0.7,
+  "api_errors": 3,
+  "avg_latency_s": 19.59,
+  "total_input_tokens": 42129,
+  "total_output_tokens": 68759
+}

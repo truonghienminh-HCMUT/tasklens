@@ -1,0 +1,52 @@
+{
+  "case": "TC10",
+  "run": 2,
+  "error": "",
+  "raw_text": "",
+  "notes": [],
+  "latency_s": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "model_calls": 0,
+  "stop_reasons": [],
+  "sent": [],
+  "output": {
+    "status": "INVALID_INPUT",
+    "summary": "Văn bản chủ yếu là ký tự lạ/mã hóa. Có thể là PDF scan hoặc file lỗi, không trích được chữ.",
+    "deadline": null,
+    "requirements": [],
+    "constraints": [],
+    "deliverables": [],
+    "grading_criteria": [],
+    "missing_info": [
+      "Một đề bài có nội dung đọc được (PDF có lớp chữ, DOCX hoặc văn bản dán trực tiếp)."
+    ],
+    "questions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:INVALID_INPUT",
+      "pass": true,
+      "detail": "status=INVALID_INPUT"
+    },
+    {
+      "check": "no_fabrication",
+      "pass": true,
+      "detail": "số mục: {'requirements': 0, 'constraints': 0, 'deliverables': 0, 'grading_criteria': 0, 'plan': 0}"
+    }
+  ],
+  "passed": true,
+  "regraded_at": "2026-09-29T12:41:35"
+}

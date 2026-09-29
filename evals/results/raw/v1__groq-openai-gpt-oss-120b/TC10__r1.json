@@ -1,0 +1,59 @@
+{
+  "case": "TC10",
+  "run": 1,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"INVALID_INPUT\",\n  \"summary\": \"\",\n  \"deadline\": null,\n  \"requirements\": [],\n  \"constraints\": [],\n  \"deliverables\": [],\n  \"grading_criteria\": [],\n  \"missing_info\": [],\n  \"questions\": [],\n  \"ambiguities\": [],\n  \"contradictions\": [],\n  \"invalid_data\": [\n    {\n      \"content\": \"Nội dung đề bài chứa dữ liệu PDF nhị phân và ký tự không thể đọc được, không cung cấp thông tin về yêu cầu, ràng buộc, hay sản phẩm cần nộp.\",\n      \"quote\": \"ÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \\t ~~~~ ^^^^ ||||\"\n    }\n  ],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"Đầu vào không phải là đề bài mô tả yêu cầu dự án hoặc bài tập; nội dung chỉ là dữ liệu nhị phân/ký tự ngẫu nhiên, không thể phân tích.\",\n  \"plan\": []\n}",
+  "notes": [],
+  "latency_s": 1.68,
+  "input_tokens": 872,
+  "output_tokens": 441,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent": [
+    "Đề bài:\nÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t\t ~~~~ ^^^^ ||||\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": {
+    "status": "INVALID_INPUT",
+    "summary": "",
+    "deadline": null,
+    "requirements": [],
+    "constraints": [],
+    "deliverables": [],
+    "grading_criteria": [],
+    "missing_info": [],
+    "questions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "invalid_data": [
+      {
+        "content": "Nội dung đề bài chứa dữ liệu PDF nhị phân và ký tự không thể đọc được, không cung cấp thông tin về yêu cầu, ràng buộc, hay sản phẩm cần nộp.",
+        "quote": "ÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t ~~~~ ^^^^ ||||"
+      }
+    ],
+    "injection_flags": [],
+    "refusal_reason": "Đầu vào không phải là đề bài mô tả yêu cầu dự án hoặc bài tập; nội dung chỉ là dữ liệu nhị phân/ký tự ngẫu nhiên, không thể phân tích.",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:INVALID_INPUT",
+      "pass": true,
+      "detail": "status=INVALID_INPUT"
+    },
+    {
+      "check": "no_fabrication",
+      "pass": true,
+      "detail": "số mục: {'requirements': 0, 'constraints': 0, 'deliverables': 0, 'grading_criteria': 0, 'plan': 0}"
+    }
+  ],
+  "passed": true,
+  "regraded_at": "2026-09-29T12:41:38"
+}

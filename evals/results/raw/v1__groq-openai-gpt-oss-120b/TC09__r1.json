@@ -1,0 +1,14 @@
+{
+  "case": "TC09",
+  "run": 1,
+  "error": "APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_[ĐÃ CHE]` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 32607, please reduce your message size and try again. Need more tokens? Upgrade to De",
+  "checks": [
+    {
+      "check": "api_call",
+      "pass": false,
+      "detail": "APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_[ĐÃ CHE]` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 32607, please reduce your message size and try again. Need more tokens? Upgrade to De"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:38"
+}

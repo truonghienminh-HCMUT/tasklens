@@ -1,0 +1,9 @@
+[project]
+name = "tasklens"
+version = "1.0.0"
+description = "Trợ lý AI phân rã đề bài tập lớn: có kiểm chứng trích dẫn, cổng hỏi lại và bộ Evals"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

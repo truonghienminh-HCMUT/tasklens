@@ -1,0 +1,81 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Đề yêu cầu làm một trang web bán hàng đẹp, đầy đủ chức năng, công nghệ tự chọn, làm nhóm hoặc cá nhân. Đề không chỉ rõ thời hạn nộp cụ thể hay tiêu chí chấm điểm chi tiết. Cần thêm thông tin để lập kế hoạch.\",\n  \"deadline\": null,\n  \"requirements\": [],\n  \"constraints\": [],\n  \"deliverables\": [],\n  \"grading_criteria\": [],\n  \"missing_info\": [\n    \"Ngày, giờ nộp bài cuối kỳ cụ thể\",\n    \"Tiêu chí chi tiết để đánh giá mức độ hoàn thiện và điểm số\",\n    \"Có yêu cầu nào về công nghệ, giao diện, tính năng bắt buộc không?\"\n  ],\n  \"questions\": [\n    \"Thời hạn nộp bài cuối kỳ là ngày bao nhiêu?\",\n    \"Điểm sẽ được chấm dựa trên những tiêu chí nào (giao diện, chức năng, code, tài liệu, ...)?\",\n    \"Có yêu cầu cụ thể nào về công nghệ (framework, ngôn ngữ) hoặc tính năng bắt buộc không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"“có đầy đủ các chức năng cần thiết” không xác định rõ các chức năng nào là bắt buộc.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    },\n    {\n      \"content\": \"“điểm tùy theo mức độ hoàn thiện của sản phẩm” không cung cấp tiêu chí chấm điểm cụ thể.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": []\n}",
+  "notes": [],
+  "latency_s": 17.81,
+  "input_tokens": 1671,
+  "output_tokens": 434,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent": [
+    "<yeu_cau_nguoi_dung>\nPhân rã đề bài này và lập kế hoạch thực hiện cho tôi.\n</yeu_cau_nguoi_dung>\n\n<thong_tin_bo_sung>\n(không có)\n</thong_tin_bo_sung>\n\n<canh_bao_he_thong>\n(không có)\n</canh_bao_he_thong>\n\n<de_bai>\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n</de_bai>"
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Đề yêu cầu làm một trang web bán hàng đẹp, đầy đủ chức năng, công nghệ tự chọn, làm nhóm hoặc cá nhân. Đề không chỉ rõ thời hạn nộp cụ thể hay tiêu chí chấm điểm chi tiết. Cần thêm thông tin để lập kế hoạch.",
+    "deadline": null,
+    "requirements": [],
+    "constraints": [],
+    "deliverables": [],
+    "grading_criteria": [],
+    "missing_info": [
+      "Ngày, giờ nộp bài cuối kỳ cụ thể",
+      "Tiêu chí chi tiết để đánh giá mức độ hoàn thiện và điểm số",
+      "Có yêu cầu nào về công nghệ, giao diện, tính năng bắt buộc không?"
+    ],
+    "questions": [
+      "Thời hạn nộp bài cuối kỳ là ngày bao nhiêu?",
+      "Điểm sẽ được chấm dựa trên những tiêu chí nào (giao diện, chức năng, code, tài liệu, ...)?",
+      "Có yêu cầu cụ thể nào về công nghệ (framework, ngôn ngữ) hoặc tính năng bắt buộc không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "“có đầy đủ các chức năng cần thiết” không xác định rõ các chức năng nào là bắt buộc.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      },
+      {
+        "content": "“điểm tùy theo mức độ hoàn thiện của sản phẩm” không cung cấp tiêu chí chấm điểm cụ thể.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 3 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": true,
+      "detail": "plan có 0 bước"
+    }
+  ],
+  "passed": true,
+  "regraded_at": "2026-09-29T12:41:45"
+}

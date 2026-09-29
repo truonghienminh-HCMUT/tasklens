@@ -1,0 +1,183 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Xây dựng một trang web bán hàng với giao diện đẹp và đầy đủ các chức năng cần thiết. Công nghệ được tự do chọn, có thể thực hiện cá nhân hoặc nhóm. Bài sẽ được nộp vào cuối kỳ và điểm sẽ dựa trên mức độ hoàn thiện.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Dùng công nghệ nào cũng được miễn là phù hợp.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Làm nhóm hoặc cá nhân tùy ý.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.",
+        "quote": "Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Điểm tùy theo mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Ngày và giờ cụ thể của hạn nộp cuối kỳ.",
+      "Danh sách chi tiết các chức năng cần có (ví dụ: danh mục sản phẩm, giỏ hàng, thanh toán, quản lý người dùng, quản trị viên, tìm kiếm, responsive design, ...).",
+      "Tiêu chí chấm điểm chi tiết (các yếu tố được đánh giá, trọng số từng yếu tố).",
+      "Định dạng nộp (mã nguồn, tài liệu thiết kế, video demo, link triển khai, ...).",
+      "Giới hạn hoặc yêu cầu về công nghệ (có cần dùng framework nào không, có yêu cầu về hosting không, ...).",
+      "Số lượng thành viên tối đa trong nhóm (nếu có quy định).",
+      "Yêu cầu về tài liệu hướng dẫn sử dụng và triển khai.",
+      "Các yêu cầu bảo mật hoặc tuân thủ pháp lý (ví dụ: lưu trữ thông tin khách hàng)."
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ là ngày/tháng/năm và giờ cụ thể nào?",
+      "Bạn mong muốn trang web có những chức năng cụ thể nào? (ví dụ: đăng ký/đăng nhập, danh mục sản phẩm, giỏ hàng, thanh toán trực tuyến, quản trị nội dung, ...)",
+      "Tiêu chí chấm điểm chi tiết như thế nào? Các yếu tố nào được tính trọng số cao nhất?",
+      "Bài nộp cần bao gồm những tài liệu nào (code, README, thiết kế UI/UX, video demo, link triển khai, ...)?",
+      "Có quy định tối đa về số thành viên trong một nhóm không?",
+      "Có yêu cầu bắt buộc về công nghệ hoặc môi trường triển khai (ví dụ: React, Laravel, Docker, ...)?",
+      "Bạn có yêu cầu đặc biệt nào về bảo mật, lưu trữ dữ liệu người dùng, hoặc tuân thủ pháp lý không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "\"đầy đủ các chức năng cần thiết\" không xác định rõ các chức năng cụ thể nào cần có.",
+        "quote": "đầy đủ các chức năng cần thiết"
+      },
+      {
+        "content": "\"điểm tùy theo mức độ hoàn thiện của sản phẩm\" không nêu rõ tiêu chí đánh giá chi tiết và trọng số.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Xác nhận thông tin thiếu: thu thập ngày giờ nộp, danh sách chức năng chi tiết, tiêu chí chấm điểm, định dạng nộp và quy định nhóm.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 2,
+        "task": "Lập danh sách yêu cầu chức năng dựa trên phản hồi (sản phẩm, giỏ hàng, thanh toán, quản trị, ...).",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 3,
+        "task": "Chọn công nghệ phù hợp (frontend, backend, database, hosting).",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 4,
+        "task": "Thiết kế UI/UX (wireframe, mockup) và phê duyệt với giảng viên/nhóm.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 5,
+        "task": "Thiết lập môi trường phát triển, tạo repository và cấu trúc dự án.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 6,
+        "task": "Phát triển các chức năng cốt lõi: hiển thị danh mục sản phẩm, chi tiết sản phẩm, giỏ hàng.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 7,
+        "task": "Thêm chức năng người dùng: đăng ký, đăng nhập, quản lý tài khoản.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 8,
+        "task": "Triển khai quy trình thanh toán (có thể tích hợp mô phỏng hoặc cổng thanh toán thực tế).",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 9,
+        "task": "Xây dựng giao diện quản trị: quản lý sản phẩm, đơn hàng, người dùng.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 10,
+        "task": "Kiểm thử (unit test, integration test, UI test) và sửa lỗi.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 11,
+        "task": "Viết tài liệu: README, hướng dẫn cài đặt, hướng dẫn sử dụng, mô tả kiến trúc.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 12,
+        "task": "Triển khai lên môi trường thực tế (server, cloud) và chuẩn bị video/demo.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 13,
+        "task": "Nộp đầy đủ các tài liệu và liên kết dự án trước hạn cuối kỳ.",
+        "due": "dd/mm/yyyy"
+      }
+    ]
+  },
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Xây dựng một trang web bán hàng với giao diện đẹp và đầy đủ các chức năng cần thiết. Công nghệ được tự do chọn, có thể thực hiện cá nhân hoặc nhóm. Bài sẽ được nộp vào cuối kỳ và điểm sẽ dựa trên mức độ hoàn thiện.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Làm nhóm hoặc cá nhân tùy ý.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm tùy theo mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày và giờ cụ thể của hạn nộp cuối kỳ.\",\n    \"Danh sách chi tiết các chức năng cần có (ví dụ: danh mục sản phẩm, giỏ hàng, thanh toán, quản lý người dùng, quản trị viên, tìm kiếm, responsive design, ...).\",\n    \"Tiêu chí chấm điểm chi tiết (các yếu tố được đánh giá, trọng số từng yếu tố).\",\n    \"Định dạng nộp (mã nguồn, tài liệu thiết kế, video demo, link triển khai, ...).\",\n    \"Giới hạn hoặc yêu cầu về công nghệ (có cần dùng framework nào không, có yêu cầu về hosting không, ...).\",\n    \"Số lượng thành viên tối đa trong nhóm (nếu có quy định).\",\n    \"Yêu cầu về tài liệu hướng dẫn sử dụng và triển khai.\",\n    \"Các yêu cầu bảo mật hoặc tuân thủ pháp lý (ví dụ: lưu trữ thông tin khách hàng).\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ là ngày/tháng/năm và giờ cụ thể nào?\",\n    \"Bạn mong muốn trang web có những chức năng cụ thể nào? (ví dụ: đăng ký/đăng nhập, danh mục sản phẩm, giỏ hàng, thanh toán trực tuyến, quản trị nội dung, ...)\",\n    \"Tiêu chí chấm điểm chi tiết như thế nào? Các yếu tố nào được tính trọng số cao nhất?\",\n    \"Bài nộp cần bao gồm những tài liệu nào (code, README, thiết kế UI/UX, video demo, link triển khai, ...)?\",\n    \"Có quy định tối đa về số thành viên trong một nhóm không?\",\n    \"Có yêu cầu bắt buộc về công nghệ hoặc môi trường triển khai (ví dụ: React, Laravel, Docker, ...)?\",\n    \"Bạn có yêu cầu đặc biệt nào về bảo mật, lưu trữ dữ liệu người dùng, hoặc tuân thủ pháp lý không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"\\\"đầy đủ các chức năng cần thiết\\\" không xác định rõ các chức năng cụ thể nào cần có.\",\n      \"quote\": \"đầy đủ các chức năng cần thiết\"\n    },\n    {\n      \"content\": \"\\\"điểm tùy theo mức độ hoàn thiện của sản phẩm\\\" không nêu rõ tiêu chí đánh giá chi tiết và trọng số.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Xác nhận thông tin thiếu: thu thập ngày giờ nộp, danh sách chức năng chi tiết, tiêu chí chấm điểm, định dạng nộp và quy định nhóm.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Lập danh sách yêu cầu chức năng dựa trên phản hồi (sản phẩm, giỏ hàng, thanh toán, quản trị, ...).\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Chọn công nghệ phù hợp (frontend, backend, database, hosting).\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Thiết kế UI/UX (wireframe, mockup) và phê duyệt với giảng viên/nhóm.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Thiết lập môi trường phát triển, tạo repository và cấu trúc dự án.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Phát triển các chức năng cốt lõi: hiển thị danh mục sản phẩm, chi tiết sản phẩm, giỏ hàng.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 7,\n      \"task\": \"Thêm chức năng người dùng: đăng ký, đăng nhập, quản lý tài khoản.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 8,\n      \"task\": \"Triển khai quy trình thanh toán (có thể tích hợp mô phỏng hoặc cổng thanh toán thực tế).\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 9,\n      \"task\": \"Xây dựng giao diện quản trị: quản lý sản phẩm, đơn hàng, người dùng.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 10,\n      \"task\": \"Kiểm thử (unit test, integration test, UI test) và sửa lỗi.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 11,\n      \"task\": \"Viết tài liệu: README, hướng dẫn cài đặt, hướng dẫn sử dụng, mô tả kiến trúc.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 12,\n      \"task\": \"Triển khai lên môi trường thực tế (server, cloud) và chuẩn bị video/demo.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 13,\n      \"task\": \"Nộp đầy đủ các tài liệu và liên kết dự án trước hạn cuối kỳ.\",\n      \"due\": \"dd/mm/yyyy\"\n    }\n  ]\n}",
+  "parse_error": "",
+  "notes": [],
+  "latency_s": 12.57,
+  "input_tokens": 851,
+  "output_tokens": 2274,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent_preview": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "sent_chars": [
+    309
+  ],
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 7 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "plan có 13 bước"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-28T23:50:37"
+}

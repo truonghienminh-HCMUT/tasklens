@@ -1,0 +1,105 @@
+{
+  "case": "TC03",
+  "run": 2,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Đề bài yêu cầu sinh viên xây dựng một trang web bán hàng với các chức năng cần thiết. Sinh viên có quyền tự chọn công nghệ và hình thức làm việc cá nhân hoặc nhóm.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Xây dựng một trang web bán hàng có đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Công nghệ sử dụng phải phù hợp với dự án.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Có thể làm việc theo nhóm hoặc làm cá nhân.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Một trang web bán hàng hoàn thiện.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số dựa vào mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày và giờ hạn nộp chính thức cụ thể.\",\n    \"Danh sách chi tiết các chức năng được coi là 'cần thiết'.\",\n    \"Tiêu chí cụ thể để đánh giá tính thẩm mỹ ('đẹp') của trang web.\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ chính xác là vào ngày nào?\",\n    \"Những chức năng cụ thể nào bắt buộc phải có trong trang web bán hàng?\",\n    \"Có yêu cầu hay tiêu chuẩn nào về giao diện người dùng không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Khái niệm 'chức năng cần thiết' không được định nghĩa rõ ràng.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    },\n    {\n      \"content\": \"Tiêu chuẩn về mặt thẩm mỹ 'cho đẹp' mang tính cảm tính.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": []\n}",
+  "notes": [],
+  "latency_s": 44.81,
+  "input_tokens": 1610,
+  "output_tokens": 589,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "<yeu_cau_nguoi_dung>\nPhân rã đề bài này và lập kế hoạch thực hiện cho tôi.\n</yeu_cau_nguoi_dung>\n\n<thong_tin_bo_sung>\n(không có)\n</thong_tin_bo_sung>\n\n<canh_bao_he_thong>\n(không có)\n</canh_bao_he_thong>\n\n<de_bai>\nBÀI TẬP LỚN CUỐI KỲ\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n</de_bai>"
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Đề bài yêu cầu sinh viên xây dựng một trang web bán hàng với các chức năng cần thiết. Sinh viên có quyền tự chọn công nghệ và hình thức làm việc cá nhân hoặc nhóm.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Xây dựng một trang web bán hàng có đầy đủ các chức năng cần thiết.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Công nghệ sử dụng phải phù hợp với dự án.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Có thể làm việc theo nhóm hoặc làm cá nhân.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Một trang web bán hàng hoàn thiện.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Điểm số dựa vào mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Ngày và giờ hạn nộp chính thức cụ thể.",
+      "Danh sách chi tiết các chức năng được coi là 'cần thiết'.",
+      "Tiêu chí cụ thể để đánh giá tính thẩm mỹ ('đẹp') của trang web."
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ chính xác là vào ngày nào?",
+      "Những chức năng cụ thể nào bắt buộc phải có trong trang web bán hàng?",
+      "Có yêu cầu hay tiêu chuẩn nào về giao diện người dùng không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "Khái niệm 'chức năng cần thiết' không được định nghĩa rõ ràng.",
+        "quote": "có đầy đủ các chức năng cần thiết"
+      },
+      {
+        "content": "Tiêu chuẩn về mặt thẩm mỹ 'cho đẹp' mang tính cảm tính.",
+        "quote": "Làm một trang web bán hàng cho đẹp"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 3 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": true,
+      "detail": "plan có 0 bước"
+    }
+  ],
+  "passed": true,
+  "regraded_at": "2026-09-29T12:41:34"
+}

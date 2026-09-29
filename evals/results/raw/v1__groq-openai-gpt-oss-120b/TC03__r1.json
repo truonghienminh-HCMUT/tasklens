@@ -1,0 +1,169 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "raw_text": "{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Yêu cầu xây dựng một trang web bán hàng có giao diện đẹp, đầy đủ các chức năng cần thiết, không quy định công nghệ, làm nhóm hoặc cá nhân, nộp vào cuối kỳ.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Trang web bán hàng với đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Công nghệ không giới hạn, miễn là phù hợp.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Có thể thực hiện theo nhóm hoặc cá nhân.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    },\n    {\n      \"content\": \"Nộp vào cuối kỳ.\",\n      \"quote\": \"Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"deliverables\": [],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm dựa trên mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày và giờ cụ thể của hạn nộp cuối kỳ.\",\n    \"Danh sách chi tiết các chức năng cần có (ví dụ: danh mục sản phẩm, giỏ hàng, thanh toán, quản lý người dùng, quản trị, v.v.).\",\n    \"Yêu cầu về giao diện (độ responsive, chuẩn UI/UX, mẫu thiết kế mẫu).\",\n    \"Các tài liệu, file cần nộp (source code, tài liệu thiết kế, hướng dẫn cài đặt, video demo, v.v.).\",\n    \"Định dạng nộp (zip, repository Git, link demo, tài liệu PDF, …).\",\n    \"Tiêu chí chấm điểm chi tiết (độ hoàn thiện, chất lượng code, tài liệu, bảo mật, khả năng mở rộng, …).\",\n    \"Có giới hạn số thành viên trong nhóm không? Nếu có, tối đa bao nhiêu người?\",\n    \"Có yêu cầu đặc biệt nào về công nghệ (framework, ngôn ngữ, database) không?\",\n    \"Có yêu cầu về môi trường triển khai (host, cloud, server nội bộ) không?\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ là ngày/giờ cụ thể nào?\",\n    \"Bạn mong muốn trang web có những chức năng cụ thể nào? (ví dụ: danh mục sản phẩm, tìm kiếm, giỏ hàng, thanh toán, đăng ký/đăng nhập, quản trị viên, ...)\",\n    \"Cần nộp những tài liệu và file nào cùng với dự án?\",\n    \"Định dạng nộp (zip, link repository, video demo, tài liệu PDF…) là gì?\",\n    \"Có tiêu chí chấm điểm chi tiết nào được cung cấp không? (trọng số các mục như UI, chức năng, code quality, …)\",\n    \"Số lượng thành viên tối đa trong một nhóm là bao nhiêu?\",\n    \"Giảng viên có yêu cầu công nghệ hoặc nền tảng nào cụ thể không?\",\n    \"Có yêu cầu về môi trường triển khai (máy chủ, cloud, domain) không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"\\\"đầy đủ các chức năng cần thiết\\\" chưa xác định rõ các chức năng cụ thể nào.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    },\n    {\n      \"content\": \"\\\"đẹp\\\" là tiêu chí chủ quan, chưa có tiêu chuẩn thiết kế cụ thể.\",\n      \"quote\": \"trang web bán hàng cho đẹp\"\n    },\n    {\n      \"content\": \"\\\"công nghệ nào cũng được\\\" không xác định ràng buộc về công nghệ, framework hoặc ngôn ngữ.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp\"\n    },\n    {\n      \"content\": \"\\\"điểm tùy theo mức độ hoàn thiện\\\" không cung cấp bảng rubric chi tiết.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": null,\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Thu thập thông tin chi tiết: xác định deadline, danh sách chức năng, yêu cầu giao diện, tiêu chí chấm điểm, tài liệu cần nộp và các ràng buộc công nghệ.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Lập bản mô tả yêu cầu chi tiết (SRS) dựa trên thông tin đã thu thập.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Chọn công nghệ phù hợp (frontend, backend, database) và chuẩn bị môi trường phát triển.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Thiết kế giao diện (wireframe, mockup) và kiến trúc hệ thống.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Phát triển các chức năng cơ bản: danh mục sản phẩm, chi tiết sản phẩm, giỏ hàng, đăng ký/đăng nhập.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Triển khai chức năng thanh toán và quản trị (quản lý sản phẩm, đơn hàng, người dùng).\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 7,\n      \"task\": \"Kiểm thử (unit test, integration test, UI test) và tối ưu hiệu năng.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 8,\n      \"task\": \"Chuẩn bị tài liệu: hướng dẫn cài đặt, tài liệu thiết kế, video demo, bản README.\",\n      \"due\": \"dd/mm/yyyy\"\n    },\n    {\n      \"step\": 9,\n      \"task\": \"Đóng gói và nộp sản phẩm theo định dạng yêu cầu.\",\n      \"due\": \"dd/mm/yyyy\"\n    }\n  ]\n}",
+  "notes": [],
+  "latency_s": 35.87,
+  "input_tokens": 837,
+  "output_tokens": 2301,
+  "model_calls": 1,
+  "stop_reasons": [
+    "stop"
+  ],
+  "sent": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\r\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Yêu cầu xây dựng một trang web bán hàng có giao diện đẹp, đầy đủ các chức năng cần thiết, không quy định công nghệ, làm nhóm hoặc cá nhân, nộp vào cuối kỳ.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Trang web bán hàng với đầy đủ các chức năng cần thiết.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Công nghệ không giới hạn, miễn là phù hợp.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Có thể thực hiện theo nhóm hoặc cá nhân.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      },
+      {
+        "content": "Nộp vào cuối kỳ.",
+        "quote": "Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "deliverables": [],
+    "grading_criteria": [
+      {
+        "content": "Điểm dựa trên mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Ngày và giờ cụ thể của hạn nộp cuối kỳ.",
+      "Danh sách chi tiết các chức năng cần có (ví dụ: danh mục sản phẩm, giỏ hàng, thanh toán, quản lý người dùng, quản trị, v.v.).",
+      "Yêu cầu về giao diện (độ responsive, chuẩn UI/UX, mẫu thiết kế mẫu).",
+      "Các tài liệu, file cần nộp (source code, tài liệu thiết kế, hướng dẫn cài đặt, video demo, v.v.).",
+      "Định dạng nộp (zip, repository Git, link demo, tài liệu PDF, …).",
+      "Tiêu chí chấm điểm chi tiết (độ hoàn thiện, chất lượng code, tài liệu, bảo mật, khả năng mở rộng, …).",
+      "Có giới hạn số thành viên trong nhóm không? Nếu có, tối đa bao nhiêu người?",
+      "Có yêu cầu đặc biệt nào về công nghệ (framework, ngôn ngữ, database) không?",
+      "Có yêu cầu về môi trường triển khai (host, cloud, server nội bộ) không?"
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ là ngày/giờ cụ thể nào?",
+      "Bạn mong muốn trang web có những chức năng cụ thể nào? (ví dụ: danh mục sản phẩm, tìm kiếm, giỏ hàng, thanh toán, đăng ký/đăng nhập, quản trị viên, ...)",
+      "Cần nộp những tài liệu và file nào cùng với dự án?",
+      "Định dạng nộp (zip, link repository, video demo, tài liệu PDF…) là gì?",
+      "Có tiêu chí chấm điểm chi tiết nào được cung cấp không? (trọng số các mục như UI, chức năng, code quality, …)",
+      "Số lượng thành viên tối đa trong một nhóm là bao nhiêu?",
+      "Giảng viên có yêu cầu công nghệ hoặc nền tảng nào cụ thể không?",
+      "Có yêu cầu về môi trường triển khai (máy chủ, cloud, domain) không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "\"đầy đủ các chức năng cần thiết\" chưa xác định rõ các chức năng cụ thể nào.",
+        "quote": "có đầy đủ các chức năng cần thiết"
+      },
+      {
+        "content": "\"đẹp\" là tiêu chí chủ quan, chưa có tiêu chuẩn thiết kế cụ thể.",
+        "quote": "trang web bán hàng cho đẹp"
+      },
+      {
+        "content": "\"công nghệ nào cũng được\" không xác định ràng buộc về công nghệ, framework hoặc ngôn ngữ.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp"
+      },
+      {
+        "content": "\"điểm tùy theo mức độ hoàn thiện\" không cung cấp bảng rubric chi tiết.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Thu thập thông tin chi tiết: xác định deadline, danh sách chức năng, yêu cầu giao diện, tiêu chí chấm điểm, tài liệu cần nộp và các ràng buộc công nghệ.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 2,
+        "task": "Lập bản mô tả yêu cầu chi tiết (SRS) dựa trên thông tin đã thu thập.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 3,
+        "task": "Chọn công nghệ phù hợp (frontend, backend, database) và chuẩn bị môi trường phát triển.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 4,
+        "task": "Thiết kế giao diện (wireframe, mockup) và kiến trúc hệ thống.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 5,
+        "task": "Phát triển các chức năng cơ bản: danh mục sản phẩm, chi tiết sản phẩm, giỏ hàng, đăng ký/đăng nhập.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 6,
+        "task": "Triển khai chức năng thanh toán và quản trị (quản lý sản phẩm, đơn hàng, người dùng).",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 7,
+        "task": "Kiểm thử (unit test, integration test, UI test) và tối ưu hiệu năng.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 8,
+        "task": "Chuẩn bị tài liệu: hướng dẫn cài đặt, tài liệu thiết kế, video demo, bản README.",
+        "due": "dd/mm/yyyy"
+      },
+      {
+        "step": 9,
+        "task": "Đóng gói và nộp sản phẩm theo định dạng yêu cầu.",
+        "due": "dd/mm/yyyy"
+      }
+    ]
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 4 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 8 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "plan có 9 bước"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:38"
+}

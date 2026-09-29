@@ -1,0 +1,33 @@
+{
+  "version": "v2",
+  "provider": "gemini",
+  "model": "gemma-4-26b-a4b-it",
+  "runs_per_case": 3,
+  "timestamp": "2026-09-29T12:47:49",
+  "regraded_from_raw": true,
+  "cases": {
+    "RC01": {
+      "result": "PASS",
+      "runs_pass": 3,
+      "runs": 3
+    },
+    "RC02": {
+      "result": "PASS",
+      "runs_pass": 3,
+      "runs": 3
+    },
+    "RC03": {
+      "result": "PASS",
+      "runs_pass": 3,
+      "runs": 3
+    }
+  },
+  "cases_pass_strict": 3,
+  "cases_total": 3,
+  "run_pass_rate": 1.0,
+  "json_valid_rate": 1.0,
+  "api_errors": 0,
+  "avg_latency_s": 97.29,
+  "total_input_tokens": 32989,
+  "total_output_tokens": 11352
+}

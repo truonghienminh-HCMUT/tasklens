@@ -1,0 +1,58 @@
+{
+  "case": "TC07",
+  "run": 1,
+  "error": "",
+  "raw_text": "",
+  "notes": [
+    "Đã che thông tin cá nhân/xác thực trước khi gửi cho model: 1 EMAIL, 1 SĐT.",
+    "Yêu cầu bị chặn ở cổng kiểm tra phạm vi, không gửi tới model."
+  ],
+  "latency_s": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "model_calls": 0,
+  "stop_reasons": [],
+  "sent": [],
+  "output": {
+    "status": "REFUSED",
+    "summary": "",
+    "deadline": null,
+    "requirements": [],
+    "constraints": [],
+    "deliverables": [],
+    "grading_criteria": [],
+    "missing_info": [],
+    "questions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "TaskLens không dự đoán điểm số hay quyết định qua/rớt môn: đó là thẩm quyền của giảng viên. Bạn có thể hỏi trực tiếp giảng viên phụ trách; tôi có thể trích lại quy định chấm điểm và quy định nộp trễ trong đề để bạn tham khảo.",
+    "plan": []
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:REFUSED",
+      "pass": true,
+      "detail": "status=REFUSED"
+    },
+    {
+      "check": "refusal_mentions:giảng viên",
+      "pass": true,
+      "detail": "lời từ chối nhắc 'giảng viên': True"
+    },
+    {
+      "check": "no_score_claim",
+      "pass": true,
+      "detail": "không khẳng định điểm số/kết quả"
+    }
+  ],
+  "passed": true,
+  "regraded_at": "2026-09-29T12:41:34"
+}

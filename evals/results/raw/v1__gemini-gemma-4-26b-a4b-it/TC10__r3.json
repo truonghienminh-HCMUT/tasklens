@@ -1,0 +1,38 @@
+{
+  "case": "TC10",
+  "run": 3,
+  "error": "",
+  "raw_text": "```json\n{\n  \"status\": \"INVALID_INPUT\",\n  \"summary\": \"Đầu vào không chứa nội dung đề bài có ý nghĩa, chỉ bao gồm các ký tự mã hóa lỗi của định dạng PDF hoặc dữ liệu rác.\",\n  \"deadline\": null,\n  \"requirements\": [],\n  \"constraints\": [],\n  \"deliverables\": [],\n  \"grading_criteria\": [],\n  \"missing_info\": [\n    \"Nội dung văn bản thực tế của đề bài\",\n    \"File tài liệu gốc (nếu đề bài nằm trong tệp PDF)\"\n  ],\n  \"questions\": [\n    \"Dữ liệu bạn cung cấp hiện đang là các ký tự mã hóa lỗi (binary/corrupted data). Bạn vui lòng copy lại nội dung văn bản hoặc tải lên file đề bài rõ ràng hơn nhé?\"\n  ],\n  \"ambiguities\": [],\n  \"contradictions\": [],\n  \"invalid_data\": [\n    {\n      \"content\": \"Dữ liệu đầu vào không phải là một đề bài tập lớn hay đồ án, mà là chuỗi ký tự lỗi của tệp PDF.\",\n      \"quote\": \"ÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t\t ~~~~ ^^^^ ||||\"\n    }\n  ],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": []\n}\n```",
+  "notes": [],
+  "latency_s": 21.19,
+  "input_tokens": 838,
+  "output_tokens": 402,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "Đề bài:\nÿþ %PDF-1.4 %âãÏÓ 3 0 obj << /Filter /FlateDecode /Length 2841 >> stream xœ­Z[oÛÈ~ÿ¯˜Ç @@@@ ###### ▯▯▯▯ ▯▯ ▯▯▯ 01101001 01101110 ⍰⍰⍰ ¿¿¿ endstream endobj 🙂🙂🙂 ░░░▒▒▓▓ \t\t ~~~~ ^^^^ ||||\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": null,
+  "parse_error": "ValueError: Không tìm thấy JSON object hợp lệ trong câu trả lời của model",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": false,
+      "detail": "output không phải JSON hợp lệ theo schema"
+    },
+    {
+      "check": "status_is:INVALID_INPUT",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    },
+    {
+      "check": "no_fabrication",
+      "pass": false,
+      "detail": "bỏ qua vì không có JSON"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:24"
+}

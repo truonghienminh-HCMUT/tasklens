@@ -1,0 +1,13 @@
+{
+  "case": "TC06",
+  "run": 3,
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': \"Request too large for model `qwen/qwen3.8-27b` in organization `org_[ĐÃ CHE]` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1913. The request's expected output tokens exceed the enforced limit; reduce max",
+  "checks": [
+    {
+      "check": "api_call",
+      "pass": false,
+      "detail": "RateLimitError: Error code: 429 - {'error': {'message': \"Request too large for model `qwen/qwen3.8-27b` in organization `org_[ĐÃ CHE]` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1913. The request's expected output tokens exceed the enforced limit; reduce max"
+    }
+  ],
+  "passed": false
+}

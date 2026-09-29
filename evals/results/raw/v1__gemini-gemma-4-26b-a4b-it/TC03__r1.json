@@ -1,0 +1,133 @@
+{
+  "case": "TC03",
+  "run": 1,
+  "error": "",
+  "raw_text": "```json\n{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Sinh viên cần xây dựng một website thương mại điện tử với giao diện thẩm mỹ và các tính năng bán hàng cơ bản. Dự án cho phép tự chọn công nghệ và hình thức làm việc (cá nhân hoặc nhóm).\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Xây dựng một trang web bán hàng với giao diện đẹp.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp\"\n    },\n    {\n      \"content\": \"Phát triển đầy đủ các chức năng cần thiết của một trang web bán hàng.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Công nghệ: Tự do lựa chọn công nghệ miễn là phù hợp với bài toán.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp\"\n    },\n    {\n      \"content\": \"Hình thức: Có thể làm việc độc lập hoặc làm theo nhóm.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý\"\n    }\n  ],\n  \"deliverables\": [],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số dựa trên mức độ hoàn thiện và tính đầy đủ của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày, giờ nộp bài chính xác (Hạn cuối cụ thể).\",\n    \"Danh sách các chức năng 'cần thiết' được giảng viên định nghĩa (ví dụ: có bắt buộc phải có thanh toán online, quản lý kho, hay phân quyền admin không?).\",\n    \"Danh mục sản phẩm bàn giao (Code, file báo cáo Word/PDF, slide thuyết trình, hay video demo?).\",\n    \"Các tiêu chí chấm điểm chi tiết (Rubric) để biết trọng số điểm nằm ở giao diện, tính năng hay mã nguồn.\"\n  ],\n  \"questions\": [\n    \"Hạn nộp cuối kỳ cụ thể là ngày nào?\",\n    \"Bạn dự định làm một mình hay làm nhóm? (Nếu làm nhóm cần biết số lượng thành viên để lên kế hoạch phân công)\",\n    \"Bạn có yêu cầu cụ thể về ngôn ngữ lập trình hay Framework nào không, hay muốn tôi gợi ý?\",\n    \"Giảng viên có yêu cầu nộp báo cáo (document) kèm theo không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Khái niệm 'đẹp' và 'đầy đủ các chức năng cần thiết' mang tính định tính, không có tiêu chuẩn đo lường cụ thể.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": null,\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Xác định danh sách chức năng (Scope) và chọn Stack công nghệ (Frontend, Backend, DB).\",\n      \"due\": \"00/00/0000\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Thiết kế cơ sở dữ liệu (ERD) và thiết kế giao diện (UI/UX Design/Wireframe).\",\n      \"due\": \"00/00/0000\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Phát triển Backend (API, Logic nghiệp vụ) và xây dựng Database.\",\n      \"due\": \"00/00/0000\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Phát triển Frontend (Giao diện người dùng và kết nối API).\",\n      \"due\": \"00/00/0000\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Kiểm thử (Testing) các chức năng và sửa lỗi.\",\n      \"due\": \"00/00/0000\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Viết báo cáo (Documentation) và chuẩn bị sản phẩm để nộp.\",\n      \"due\": \"00/00/0000\"\n    }\n  ]\n}\n```",
+  "notes": [],
+  "latency_s": 56.17,
+  "input_tokens": 792,
+  "output_tokens": 1018,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\r\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Sinh viên cần xây dựng một website thương mại điện tử với giao diện thẩm mỹ và các tính năng bán hàng cơ bản. Dự án cho phép tự chọn công nghệ và hình thức làm việc (cá nhân hoặc nhóm).",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Xây dựng một trang web bán hàng với giao diện đẹp.",
+        "quote": "Làm một trang web bán hàng cho đẹp"
+      },
+      {
+        "content": "Phát triển đầy đủ các chức năng cần thiết của một trang web bán hàng.",
+        "quote": "có đầy đủ các chức năng cần thiết"
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Công nghệ: Tự do lựa chọn công nghệ miễn là phù hợp với bài toán.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp"
+      },
+      {
+        "content": "Hình thức: Có thể làm việc độc lập hoặc làm theo nhóm.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý"
+      }
+    ],
+    "deliverables": [],
+    "grading_criteria": [
+      {
+        "content": "Điểm số dựa trên mức độ hoàn thiện và tính đầy đủ của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm"
+      }
+    ],
+    "missing_info": [
+      "Ngày, giờ nộp bài chính xác (Hạn cuối cụ thể).",
+      "Danh sách các chức năng 'cần thiết' được giảng viên định nghĩa (ví dụ: có bắt buộc phải có thanh toán online, quản lý kho, hay phân quyền admin không?).",
+      "Danh mục sản phẩm bàn giao (Code, file báo cáo Word/PDF, slide thuyết trình, hay video demo?).",
+      "Các tiêu chí chấm điểm chi tiết (Rubric) để biết trọng số điểm nằm ở giao diện, tính năng hay mã nguồn."
+    ],
+    "questions": [
+      "Hạn nộp cuối kỳ cụ thể là ngày nào?",
+      "Bạn dự định làm một mình hay làm nhóm? (Nếu làm nhóm cần biết số lượng thành viên để lên kế hoạch phân công)",
+      "Bạn có yêu cầu cụ thể về ngôn ngữ lập trình hay Framework nào không, hay muốn tôi gợi ý?",
+      "Giảng viên có yêu cầu nộp báo cáo (document) kèm theo không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "Khái niệm 'đẹp' và 'đầy đủ các chức năng cần thiết' mang tính định tính, không có tiêu chuẩn đo lường cụ thể.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Xác định danh sách chức năng (Scope) và chọn Stack công nghệ (Frontend, Backend, DB).",
+        "due": "00/00/0000"
+      },
+      {
+        "step": 2,
+        "task": "Thiết kế cơ sở dữ liệu (ERD) và thiết kế giao diện (UI/UX Design/Wireframe).",
+        "due": "00/00/0000"
+      },
+      {
+        "step": 3,
+        "task": "Phát triển Backend (API, Logic nghiệp vụ) và xây dựng Database.",
+        "due": "00/00/0000"
+      },
+      {
+        "step": 4,
+        "task": "Phát triển Frontend (Giao diện người dùng và kết nối API).",
+        "due": "00/00/0000"
+      },
+      {
+        "step": 5,
+        "task": "Kiểm thử (Testing) các chức năng và sửa lỗi.",
+        "due": "00/00/0000"
+      },
+      {
+        "step": 6,
+        "task": "Viết báo cáo (Documentation) và chuẩn bị sản phẩm để nộp.",
+        "due": "00/00/0000"
+      }
+    ]
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": false,
+      "detail": "ambiguities: 1 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 4 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "plan có 6 bước"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:24"
+}

@@ -1,0 +1,138 @@
+{
+  "case": "TC03",
+  "run": 3,
+  "error": "",
+  "raw_text": "```json\n{\n  \"status\": \"NEED_INFO\",\n  \"summary\": \"Yêu cầu thực hiện một dự án website bán hàng với giao diện đẹp và đầy đủ chức năng, sử dụng công nghệ tự chọn và có thể làm việc cá nhân hoặc theo nhóm.\",\n  \"deadline\": null,\n  \"requirements\": [\n    {\n      \"content\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\",\n      \"quote\": \"Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"content\": \"Tự chọn công nghệ phù hợp.\",\n      \"quote\": \"Dùng công nghệ nào cũng được miễn là phù hợp.\"\n    },\n    {\n      \"content\": \"Hình thức: Cá nhân hoặc Nhóm.\",\n      \"quote\": \"Làm nhóm hoặc cá nhân tùy ý.\"\n    }\n  ],\n  \"deliverables\": [\n    {\n      \"content\": \"Một trang web bán hàng hoàn chỉnh.\",\n      \"quote\": \"Làm một trang web bán hàng\"\n    }\n  ],\n  \"grading_criteria\": [\n    {\n      \"content\": \"Điểm số dựa trên mức độ hoàn thiện của sản phẩm.\",\n      \"quote\": \"điểm tùy theo mức độ hoàn thiện của sản phẩm.\"\n    }\n  ],\n  \"missing_info\": [\n    \"Ngày, giờ nộp bài chính xác (hạn cuối cụ thể).\",\n    \"Danh sách các chức năng 'cần thiết' được giảng viên định nghĩa (ví dụ: có cần thanh toán online, quản lý kho, hay chỉ là giỏ hàng cơ bản?).\",\n    \"Các sản phẩm đi kèm bắt buộc (ví dụ: file báo cáo PDF, mã nguồn GitHub, hay link demo trực tuyến?).\",\n    \"Yêu cầu về công nghệ (có bắt buộc dùng ngôn ngữ/framework cụ thể nào không?).\"\n  ],\n  \"questions\": [\n    \"Ngày nộp bài cụ thể của bạn là khi nào?\",\n    \"Bạn dự định làm một mình hay làm theo nhóm?\",\n    \"Bạn đã có ý tưởng về bộ công nghệ (Tech Stack) muốn sử dụng chưa (ví dụ: MERN, PHP/Laravel, Java/Spring...)?\",\n    \"Bạn có cần tôi lập kế hoạch dựa trên một công nghệ cụ thể nào không?\"\n  ],\n  \"ambiguities\": [\n    {\n      \"content\": \"Cụm từ 'đầy đủ các chức năng cần thiết' rất mơ hồ, không rõ phạm vi yêu cầu.\",\n      \"quote\": \"có đầy đủ các chức năng cần thiết\"\n    },\n    {\n      \"content\": \"'Nộp vào cuối kỳ' không phải là một mốc thời gian có thể lập kế hoạch chính xác.\",\n      \"quote\": \"Nộp vào cuối kỳ\"\n    }\n  ],\n  \"contradictions\": [],\n  \"invalid_data\": [],\n  \"injection_flags\": [],\n  \"refusal_reason\": \"\",\n  \"plan\": [\n    {\n      \"step\": 1,\n      \"task\": \"Xác định yêu cầu chi tiết (Chức năng: Đăng ký/Đăng nhập, Giỏ hàng, Thanh toán, Quản lý sản phẩm, Admin dashboard) và chọn Tech Stack.\",\n      \"due\": \"Tùy vào deadline\"\n    },\n    {\n      \"step\": 2,\n      \"task\": \"Thiết kế cơ sở dữ liệu (Database Schema) và thiết kế giao diện (UI/UX Wireframe/Figma).\",\n      \"due\": \"Tùy vào deadline\"\n    },\n    {\n      \"step\": 3,\n      \"task\": \"Phát triển Backend (API, Logic nghiệp vụ, Kết nối DB).\",\n      \"due\": \"Tùy vào deadline\"\n    },\n    {\n      \"step\": 4,\n      \"task\": \"Phát triển Frontend (Giao diện người dùng, Kết nối API).\",\n      \"due\": \"Tùy vào deadline\"\n    },\n    {\n      \"step\": 5,\n      \"task\": \"Kiểm thử (Testing) các chức năng chính và sửa lỗi (Bug fixing).\",\n      \"due\": \"Tùy vào deadline\"\n    },\n    {\n      \"step\": 6,\n      \"task\": \"Viết báo cáo tài liệu và đóng gói sản phẩm để nộp.\",\n      \"due\": \"Trước hạn nộp\"\n    }\n  ]\n}\n```",
+  "notes": [],
+  "latency_s": 52.56,
+  "input_tokens": 792,
+  "output_tokens": 1010,
+  "model_calls": 1,
+  "stop_reasons": [
+    "FinishReason.STOP"
+  ],
+  "sent": [
+    "Đề bài:\nBÀI TẬP LỚN CUỐI KỲ\r\nLàm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết. Dùng công nghệ nào cũng được miễn là phù hợp. Làm nhóm hoặc cá nhân tùy ý. Nộp vào cuối kỳ, điểm tùy theo mức độ hoàn thiện của sản phẩm.\n\nYêu cầu của tôi: Phân rã đề bài này và lập kế hoạch thực hiện cho tôi."
+  ],
+  "output": {
+    "status": "NEED_INFO",
+    "summary": "Yêu cầu thực hiện một dự án website bán hàng với giao diện đẹp và đầy đủ chức năng, sử dụng công nghệ tự chọn và có thể làm việc cá nhân hoặc theo nhóm.",
+    "deadline": null,
+    "requirements": [
+      {
+        "content": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết.",
+        "quote": "Làm một trang web bán hàng cho đẹp, có đầy đủ các chức năng cần thiết."
+      }
+    ],
+    "constraints": [
+      {
+        "content": "Tự chọn công nghệ phù hợp.",
+        "quote": "Dùng công nghệ nào cũng được miễn là phù hợp."
+      },
+      {
+        "content": "Hình thức: Cá nhân hoặc Nhóm.",
+        "quote": "Làm nhóm hoặc cá nhân tùy ý."
+      }
+    ],
+    "deliverables": [
+      {
+        "content": "Một trang web bán hàng hoàn chỉnh.",
+        "quote": "Làm một trang web bán hàng"
+      }
+    ],
+    "grading_criteria": [
+      {
+        "content": "Điểm số dựa trên mức độ hoàn thiện của sản phẩm.",
+        "quote": "điểm tùy theo mức độ hoàn thiện của sản phẩm."
+      }
+    ],
+    "missing_info": [
+      "Ngày, giờ nộp bài chính xác (hạn cuối cụ thể).",
+      "Danh sách các chức năng 'cần thiết' được giảng viên định nghĩa (ví dụ: có cần thanh toán online, quản lý kho, hay chỉ là giỏ hàng cơ bản?).",
+      "Các sản phẩm đi kèm bắt buộc (ví dụ: file báo cáo PDF, mã nguồn GitHub, hay link demo trực tuyến?).",
+      "Yêu cầu về công nghệ (có bắt buộc dùng ngôn ngữ/framework cụ thể nào không?)."
+    ],
+    "questions": [
+      "Ngày nộp bài cụ thể của bạn là khi nào?",
+      "Bạn dự định làm một mình hay làm theo nhóm?",
+      "Bạn đã có ý tưởng về bộ công nghệ (Tech Stack) muốn sử dụng chưa (ví dụ: MERN, PHP/Laravel, Java/Spring...)?",
+      "Bạn có cần tôi lập kế hoạch dựa trên một công nghệ cụ thể nào không?"
+    ],
+    "ambiguities": [
+      {
+        "content": "Cụm từ 'đầy đủ các chức năng cần thiết' rất mơ hồ, không rõ phạm vi yêu cầu.",
+        "quote": "có đầy đủ các chức năng cần thiết"
+      },
+      {
+        "content": "'Nộp vào cuối kỳ' không phải là một mốc thời gian có thể lập kế hoạch chính xác.",
+        "quote": "Nộp vào cuối kỳ"
+      }
+    ],
+    "contradictions": [],
+    "invalid_data": [],
+    "injection_flags": [],
+    "refusal_reason": "",
+    "plan": [
+      {
+        "step": 1,
+        "task": "Xác định yêu cầu chi tiết (Chức năng: Đăng ký/Đăng nhập, Giỏ hàng, Thanh toán, Quản lý sản phẩm, Admin dashboard) và chọn Tech Stack.",
+        "due": "Tùy vào deadline"
+      },
+      {
+        "step": 2,
+        "task": "Thiết kế cơ sở dữ liệu (Database Schema) và thiết kế giao diện (UI/UX Wireframe/Figma).",
+        "due": "Tùy vào deadline"
+      },
+      {
+        "step": 3,
+        "task": "Phát triển Backend (API, Logic nghiệp vụ, Kết nối DB).",
+        "due": "Tùy vào deadline"
+      },
+      {
+        "step": 4,
+        "task": "Phát triển Frontend (Giao diện người dùng, Kết nối API).",
+        "due": "Tùy vào deadline"
+      },
+      {
+        "step": 5,
+        "task": "Kiểm thử (Testing) các chức năng chính và sửa lỗi (Bug fixing).",
+        "due": "Tùy vào deadline"
+      },
+      {
+        "step": 6,
+        "task": "Viết báo cáo tài liệu và đóng gói sản phẩm để nộp.",
+        "due": "Trước hạn nộp"
+      }
+    ]
+  },
+  "parse_error": "",
+  "checks": [
+    {
+      "check": "json_valid",
+      "pass": true,
+      "detail": "JSON đúng schema"
+    },
+    {
+      "check": "status_is:NEED_INFO",
+      "pass": true,
+      "detail": "status=NEED_INFO"
+    },
+    {
+      "check": "ambiguities_min:2",
+      "pass": true,
+      "detail": "ambiguities: 2 (cần ≥ 2)"
+    },
+    {
+      "check": "questions_min:2",
+      "pass": true,
+      "detail": "questions: 4 (cần ≥ 2)"
+    },
+    {
+      "check": "plan_empty",
+      "pass": false,
+      "detail": "plan có 6 bước"
+    }
+  ],
+  "passed": false,
+  "regraded_at": "2026-09-29T12:41:24"
+}
