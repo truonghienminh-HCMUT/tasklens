@@ -45,7 +45,7 @@ Nguồn: `evals/results/comparison.md`, `evals/results/failure-modes.md`.
 | V1 → V2, 11 ca thử lửa | 3/11 → **10/11** | 3/11 → **8/11** |
 | V1 → V2, 3 ca đề thật | 0/3 → **3/3** | 0/3 → **3/3** (9/9 lượt) |
 | JSON hợp lệ V1 → V2 | 80% → 100% | 90% → 100% |
-| Độ trễ trung bình / lượt (V2) | ~18 s | ~62 s |
+| Độ trễ trung bình / lượt có gọi model (V2) | ~25 s | ~85 s |
 | Kháng injection ở V1 (chưa có lớp bảo vệ) | **Làm theo** (chèn mã, chép lộ system prompt) | **Chống được** 3/3 lượt |
 | Output bị cắt ở V1 | Có (mặc định 3.072 token; model tiêu token cho suy luận) | Không |
 | Dùng JSON schema mode | Có lợi → **bật** (`json_object`) | Suy biến → **tắt** |
@@ -55,7 +55,7 @@ Nguồn: `evals/results/comparison.md`, `evals/results/failure-modes.md`.
 
 ## 9.4. Kết luận
 
-1. **Kiến trúc sống sót qua đổi model.** Cùng một prompt V2, cùng các cổng code, cùng bộ test: cả 2 model của 2 hãng đều tăng từ 3/11 lên 8–10/11, và 3/3 trên đề thật (gpt-oss). Đúng thông điệp của slide 27: *model là linh kiện, kiến trúc mới là tài sản*.
+1. **Kiến trúc sống sót qua đổi model.** Cùng một prompt V2, cùng các cổng code, cùng bộ test: cả 2 model của 2 hãng đều tăng từ 3/11 lên 8–10/11, và 3/3 trên đề thật (cả 2 model). Đúng thông điệp của slide 27: *model là linh kiện, kiến trúc mới là tài sản*.
 2. **Mọi khác biệt giữa các model đều nằm gọn trong adapter**, gồm 3 tham số: bật/tắt JSON mode, ngân sách tài liệu, mức suy luận. Không dòng logic nào của pipeline phải sửa khi đổi model.
 3. **An toàn không được phó mặc cho model.** Gemma tự chống injection còn gpt-oss thì không. Nếu chỉ thử trên Gemma, ta sẽ kết luận sai rằng "hệ thống an toàn". Phải có lớp bảo vệ độc lập với model và phải thử trên nhiều model.
 4. **Trả lời câu hỏi "công ty chuyển sang model nội bộ thì mất bao lâu"** (slide 34): viết 1 adapter (Groq: 15 dòng, vì API tương thích OpenAI), chạy `run_evals.py --model <mới>` để có số liệu so sánh trong vài giờ, rồi chỉnh các tham số adapter nếu Evals chỉ ra vấn đề (như đã làm với Gemma).

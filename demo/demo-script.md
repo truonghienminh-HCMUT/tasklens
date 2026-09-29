@@ -5,7 +5,7 @@
 
 ## Chuẩn bị trước khi quay (khoảng 10 phút)
 
-1. `streamlit run app.py` → chọn **V2**, model **groq** (gpt-oss, phản hồi 5–15 giây, nhanh hơn Gemma khi quay).
+1. `streamlit run app.py` → chọn **V2**, model **groq** (gpt-oss, mỗi lần phân tích mất khoảng 15–40 giây, nhanh hơn Gemma khi quay; cắt đoạn chờ khi dựng video).
 2. Chạy thử trước mỗi cảnh 1 lần để chắc chắn quota Groq còn (`python scripts/check_setup.py`).
 3. Mở sẵn các tab:
    - (a) `docs/workflow-diagram.png`

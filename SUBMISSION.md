@@ -2,7 +2,7 @@
 
 **Khóa học:** Làm chủ kỹ thuật xây dựng Prompt và trợ lý AI (AOTS × HCMUT)
 **Sản phẩm:** TaskLens, trợ lý AI phân rã đề bài tập lớn, biết dừng khi thiếu dữ kiện
-**Học viên:** Trương Hiển Minh · MSSV: ⟦điền khi nộp⟧
+**Học viên:** Trương Hiển Minh · MSSV: 2452771
 **Repository:** https://github.com/truonghienminh-HCMUT/tasklens · **Video demo:** ⟦link⟧ · **Bài LinkedIn:** ⟦link⟧
 
 **Kết quả chính:**

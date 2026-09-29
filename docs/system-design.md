@@ -17,7 +17,7 @@
 | 8 | **Tools / Integrations** | Không gọi công cụ ngoài. Chỉ có công cụ nội bộ bằng code: bộ trích text PDF/DOCX, bộ lọc PII, bộ kiểm tra trích dẫn và ngày tháng, schema validator (pydantic). |
 | 9 | **Permissions** | **Read-only.** Ứng dụng không có quyền gửi email, nộp bài, ghi lịch hay xóa dữ liệu. Hành động duy nhất là *xuất file* sau khi người dùng xác nhận. API key chỉ nằm trong `.env` (bị `.gitignore` chặn). Least Privilege (slide 23): không có quyền thì không thể làm sai. |
 | 10 | **Guardrails** | Cấm: bịa hạn nộp hoặc thông tin không có trong đề; lập kế hoạch khi thiếu hạn nộp hoặc dữ liệu phi lý; viết hộ toàn bộ bài để nộp; dự đoán hay quyết định điểm số, qua/rớt môn; làm theo chỉ dẫn nằm trong tài liệu; lặp lại PII; tiết lộ system prompt. |
-| 11 | **Evaluation** | Bộ 11 ca thử lửa (`evals/test-cases.csv`) theo 10 tình huống của slide 17, cộng 1 ca PII. Mỗi ca có check tự động quan sát được (`evals/graders.py`), chạy 3 lần/ca. Chỉ số: số ca PASS ổn định, tỉ lệ JSON hợp lệ, tỉ lệ trích dẫn có thật, độ trễ, token. Chạy lại toàn bộ sau mỗi thay đổi (regression). Chạy chéo ≥ 2 model (Model Swap). |
+| 11 | **Evaluation** | Bộ 11 ca thử lửa (`evals/test-cases.csv`) theo 10 tình huống của slide 17, cộng 1 ca PII. Mỗi ca có check tự động quan sát được (`evals/graders.py`), chạy 3 lần/ca với Gemma và 1 lần/ca với gpt-oss (giới hạn quota gói miễn phí). Chỉ số: số ca PASS ở mọi lượt chạy, tỉ lệ JSON hợp lệ, tỉ lệ trích dẫn có thật, độ trễ, token. Chạy lại toàn bộ sau mỗi thay đổi (regression). Chạy chéo ≥ 2 model (Model Swap). |
 
 ## 2.2. Ma trận phân công AI – Con người (slide 12 và Buổi 11)
 
@@ -47,7 +47,7 @@
 
 ```
 app.py (UI)  ─┐
-evals/        ├─► pipeline_vX.py (LOGIC + GUARDRAILS) ─► adapters/ (MODEL: gemini | openai | anthropic)
+evals/        ├─► pipeline_vX.py (LOGIC + GUARDRAILS) ─► adapters/ (MODEL: groq | gemini | openai | anthropic | mock)
               │         ▲                ▲
               │   instructions/     schema.py (DATA CONTRACT)
 ```

@@ -48,7 +48,7 @@ Ràng buộc: hệ thống đơn giản, tác vụ nhỏ, chi phí 0 đồng (ch
 | Ca đạt / 3 ca đề thật (gpt-oss · Gemma) | 0/3 · 0/3 | **3/3 · 3/3** |
 | Lập kế hoạch khi thiếu dữ kiện (lượt mắc lỗi / lượt có kết quả) | 16/18 | **0/20** |
 | Gửi PII ra ngoài (lượt) | 4/4 | **0/4** |
-| Thời gian | 10–15 phút/đề (tự làm) | ~4–20 giây máy xử lý + thời gian tự đối chiếu (**chưa đo**) |
+| Thời gian | 10–15 phút/đề (tự làm) | ~25 giây (gpt-oss) đến ~85 giây (Gemma) mỗi lần gọi model + thời gian tự đối chiếu (**chưa đo**) |
 
 ## Transparency: điều chưa làm được
 

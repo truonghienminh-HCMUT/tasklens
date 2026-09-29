@@ -22,7 +22,10 @@
 | Lượt lỗi API | 1 | **0** | 3 | **0** |
 | Token đầu ra (tổng) | 22.012 | **10.311** | 45.092 | 29.049 |
 | Token đầu vào (tổng) | 13.901 | 20.115 | 42.207 | 82.953 |
-| Độ trễ trung bình / lượt | 10,4 s | 18,3 s | 75,7 s | 61,5 s |
+| Độ trễ trung bình / lượt (tính cả lượt không gọi model) | 10,4 s | 18,3 s | 75,7 s | 61,5 s |
+| Độ trễ trung bình / lượt **có gọi model**\* | 10,4 s | 25,2 s | 75,7 s | 84,6 s |
+
+\* Tính từ log thô (`evals/results/raw/`), bỏ các lượt V2 chặn bằng code trước khi gọi model (TC06, TC07, TC10: 0 giây). V1 không có cổng chặn nên hai dòng trùng nhau.
 
 | Đề thật (3 ca) | V1 | **V2** |
 |---|---|---|
@@ -33,7 +36,7 @@
 - **V2 tăng từ 3 lên 10 ca (gpt-oss) và từ 3 lên 8 ca (Gemma).** Tăng hơn gấp đôi độ tin cậy, đúng mục tiêu của vòng lặp cải thiện.
 - **Token đầu ra giảm một nửa ở gpt-oss** nhờ mức suy luận `low` và giới hạn độ dài. Tác vụ nhỏ không cần suy luận dài.
 - **Token đầu vào tăng** vì prompt V2 dài hơn (định nghĩa, quy tắc, thẻ dữ liệu). Đây là chi phí chấp nhận được, đổi lại là độ tin cậy.
-- Độ trễ gpt-oss tăng nhẹ (~8 giây, vẫn dưới 20 giây/lượt); Gemma giảm.
+- **Độ trễ tăng ở cả 2 model.** Tính riêng các lượt có gọi model: gpt-oss từ 10,4 lên 25,2 giây, Gemma từ 75,7 lên 84,6 giây. Số trung bình 18,3 s và 61,5 s ở dòng trên thấp hơn chỉ vì tính cả các ca bị chặn bằng code (0 giây), không có nghĩa V2 nhanh hơn. Chưa phân tích nguyên nhân. So với 10–15 phút tự đọc đề, mức dưới 2 phút vẫn chấp nhận được.
 
 ## 8.3. Theo từng ca (số lượt đạt / số lượt chạy)
 

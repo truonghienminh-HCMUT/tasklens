@@ -68,18 +68,18 @@ TaskLens **không** tự nộp bài, không gửi email, không viết hộ bài
 | Đầu vào | Đề bài PDF/DOCX/TXT có sẵn trên LMS; văn bản rõ nguồn | Không. PDF scan không có lớp text được phát hiện và từ chối (TC10) |
 | Đầu ra | JSON theo schema cố định (`src/tasklens/schema.py`), hiển thị thành bảng, xuất Markdown | Không |
 | Quy trình | 5 bước thủ công ở mục 1.3, tác giả đã tự làm nhiều lần | Không |
-| Giá trị | Giảm thời gian phân rã đề; giảm sót ràng buộc; chặn lỗi "tự bịa deadline" | Không. Đo bằng mục 1.6 |
+| Giá trị | Giảm sót và hiểu sai yêu cầu; chặn lỗi "tự bịa deadline"; biết dừng khi đề thiếu hoặc mâu thuẫn (không nhắm vào tiết kiệm thời gian, xem mục 1.1) | Không. Đo bằng mục 1.6 |
 | Kiểm thử | Có tiêu chí đúng/sai rõ: bộ 11 ca với check tự động (`evals/test-cases.csv`) | Không |
-| Phạm vi | V1 là 1 lần gọi model + 1 prompt, dựng trong < 20 phút; không cần backend phức tạp | Không |
+| Phạm vi | V1 chỉ là 1 lần gọi model + 1 prompt (`pipeline_v1.py` dưới 90 dòng); không cần backend phức tạp | Không |
 
 ## 1.6. Chỉ số thành công
 
 | Chỉ số | Cách đo | Mục tiêu |
 |---|---|---|
-| Độ tin cậy | Số ca PASS ổn định (3/3 lần) trên bộ Evals | V2 > V1 |
+| Độ tin cậy | Số ca PASS ở mọi lượt chạy trên bộ Evals (Gemma: 3 lượt/ca; gpt-oss: 1 lượt/ca do quota gói miễn phí) | V2 > V1 |
 | Không bịa | Tỉ lệ trích dẫn có thật trong đề (check `quotes_grounded`) | 100% sau cổng Validate |
 | Biết dừng | Ca thiếu/mơ hồ/phi lý trả NEED_INFO, không lập kế hoạch | 100% ở V2 |
-| Thời gian | Thủ công 10–15 phút/đề. TaskLens V2 xử lý ~4–20 giây/đề (gpt-oss) | Thời gian người dùng tự đối chiếu kết quả **chưa được đo** |
+| Thời gian | Thủ công 10–15 phút/đề. TaskLens V2 mất trung bình ~25 giây mỗi lần gọi model với gpt-oss và ~85 giây với Gemma; ca bị chặn bằng code trả kết quả ngay | Thời gian người dùng tự đối chiếu kết quả **chưa được đo** |
 
 ## 1.7. Phạm vi
 
